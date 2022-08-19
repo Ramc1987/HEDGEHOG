@@ -1,1 +1,89 @@
+.header {
+  position: relative;
+  padding: 20px 20px 0;
+}
 
+.header-nav {
+  display: flex;
+  justify-content: end;
+  width: 281px;
+  margin: 0 auto;
+  height: 35px;
+}
+
+.header__toggle-menu {
+  width: 25px;
+  height: 14px;
+  position: absolute;
+  transition-duration: 1s;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  top: 30px;
+  left: 20px;
+  background: transparent
+}
+
+.header__toggle-menu span {
+  height: 2px;
+  width: 25px;
+  background: $color-first;
+  position: absolute;
+  left: 0;
+  transition-duration: .25s;
+  transition-delay: .25s;
+}
+
+.header__toggle-menu span::before {
+  content: "";
+  left: 0;
+  position: absolute;
+  top: -4px;
+  height: 2px;
+  width: 25px;
+  background: $color-first;
+  transition-duration: .25s;
+  transition: transform .25s, top .25s .25s;
+}
+
+.header__toggle-menu span::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 4px;
+  height: 2px;
+  width: 25px;
+  background: $color-first;
+  transition-duration: .25s;
+  transition: transform .25s, top .25s .25s;
+}
+
+.header__toggle-menu.open span {
+  transition-duration: 0.1s;
+  transition-delay: .25s;
+  background: transparent;
+}
+
+.header__toggle-menu.open span::before {
+  transition: top .25s, transform .25s .25s;
+  top: 0px;
+  transform: rotateZ(-45deg);
+}
+
+.header__toggle-menu.open span::after {
+  transition: top 0.4s, transform .25s .25s;
+  top: 0px;
+  transform: rotateZ(45deg);
+}
+
+.header__logo {
+  margin-right: 35px;
+}
+
+.header__logo-image {
+  display: block;
+}
+
+.header__user-list {
+  margin: 0;
+}

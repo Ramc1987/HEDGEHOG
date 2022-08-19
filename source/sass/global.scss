@@ -12,14 +12,17 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 17px;
-  color: $color-base;
-}
-
-.center-container {
-  max-width: 343px;
-  margin: 0 auto;
+  color: $color-first;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+.wrapper {
+  background: url("../img/fone/subtract.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 406px;
+  width: 320px;
 }

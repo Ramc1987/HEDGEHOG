@@ -5,16 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-    </header>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="header-nav">
+          <a class="header__logo" href="index.html">
+            <picture>
+              <img class="header__logo-image" src="./img/logo/header-logo-mob.svg" width="56" height="26" alt="Логотип сайта HEDGEHOG">
+            </picture>
+          </a>
+          <ul class="header__user-list user-list">
+            <li class="user-list__item">
+              <a href="#" class="user-list__link user-list__link--call" aria-label="Позвоните нам">
+                <svg class="user-list__link-icon user-list__link-icon--call" width="13" height="11">
+                  <use xlink:href="img/sprite.svg#call"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a href="#" class="user-list__link user-list__link--basket" aria-label="Корзина">
+                <svg class="user-list__link-icon user-list__link-icon--basket">
+                  <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__toggle-menu header__toggle-menu--close" type="button">
+          <span></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </header>
+    </div>
     <main class="main"></main>
     <footer class="footer"></footer>
+    <script src="./js/toggle-menu.js"></script>
   </body>
 </html>

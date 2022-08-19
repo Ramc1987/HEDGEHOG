@@ -1,0 +1,37 @@
+.user-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.user-list__item:not(:last-child) {
+  margin-right: 13px;
+}
+
+.user-list__link {
+  display: inline-block;
+  position: relative;
+
+  &--call {
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(92.42deg, #B0D3CE -1.96%, #FFEDCE 92.83%);
+    box-shadow: -4px -4px 20px #FFFFFF, 4px 4px 20px #CFD7D3;
+    border-radius: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  &--basket {
+    width: 32px;
+    height: 27px;
+  }
+}
+
+.user-list__link-icon {
+
+  &--call {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

@@ -11,27 +11,29 @@
     <div class="wrapper">
       <header class="header">
         <nav class="header-nav">
-          <a class="header__logo" href="index.html">
-            <picture>
-              <img class="header__logo-image" src="./img/logo/header-logo-mob.svg" width="56" height="26" alt="Логотип сайта HEDGEHOG">
-            </picture>
-          </a>
-          <ul class="header__user-list user-list">
-            <li class="user-list__item">
-              <a href="#" class="user-list__link user-list__link--call" aria-label="Позвоните нам">
-                <svg class="user-list__link-icon user-list__link-icon--call" width="13" height="11">
-                  <use xlink:href="img/sprite.svg#call"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="user-list__item">
-              <a href="#" class="user-list__link user-list__link--basket" aria-label="Корзина">
-                <svg class="user-list__link-icon user-list__link-icon--basket">
-                  <use xlink:href="img/sprite.svg#basket"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="header-nav__inner">
+            <a class="header__logo" href="index.html">
+              <picture>
+                <img class="header__logo-image" src="./img/logo/header-logo-mob.svg" width="56" height="26" alt="Логотип сайта HEDGEHOG">
+              </picture>
+            </a>
+            <ul class="header__user-list user-list">
+              <li class="user-list__item">
+                <a href="tel:+79655698998" class="user-list__link user-list__link--call" aria-label="Позвоните нам">
+                  <svg class="user-list__link-icon user-list__link-icon--call" width="13" height="11">
+                    <use xlink:href="img/sprite.svg#call"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="user-list__item">
+                <a href="#" class="user-list__link user-list__link--basket" aria-label="Корзина">
+                  <svg class="user-list__link-icon user-list__link-icon--basket" width="32" height="28">
+                    <use xlink:href="img/sprite.svg#basket"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <button class="header__toggle-menu header__toggle-menu--close" type="button">
           <span></span>

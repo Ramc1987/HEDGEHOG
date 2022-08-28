@@ -5,13 +5,17 @@
   align-items: center;
 }
 
-.user-list__item:not(:last-child) {
-  margin-right: 13px;
+.user-list__item {
+
+  &:not(:last-child) {
+    margin-right: 13px;
+  }
 }
 
-.user-list__link {
+.user-list__item-link {
   display: inline-block;
   position: relative;
+  cursor: pointer;
 
   &--call {
     width: 35px;

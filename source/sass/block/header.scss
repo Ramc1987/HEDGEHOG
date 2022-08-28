@@ -1,15 +1,25 @@
 .header {
   position: relative;
+}
+
+.header-nav {
   padding: 20px 20px 0;
+  margin-bottom: 27px;
 }
 
 .header-nav__inner {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: end;
-  width: 281px;
+  width: 100%;
   margin: 0 auto;
   height: 35px;
+
+  // @media (min-width: $mobile-rotate) {
+  //   width: 590px;
+  //   justify-content: space-between;
+  // }
 }
 
 .header__toggle-menu {
@@ -78,6 +88,7 @@
 }
 
 .header__logo {
+  z-index: 100;
   margin-right: 35px;
 }
 

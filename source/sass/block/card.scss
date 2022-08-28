@@ -1,0 +1,53 @@
+.card {
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.card__title {
+  @include font-title(48px, 69%, 700);
+
+  font-family: "CormorantInfant-Regular", "Arial", sans-serif;
+  color: #455f5b;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+}
+
+.card__sub-title {
+  @include font-title(24px, 120%, 400);
+
+  font-family: "CormorantInfant-Regular", "Arial", sans-serif;
+  color: #70908b;
+  text-transform: uppercase;
+  margin: 0 0 7px 0;
+}
+
+.card__description {
+  @include font-title(12px, 141%, 400);
+
+  font-family: "Raleway", "Arial", sans-serif;
+  color: #70908b;
+  margin: 0 0 21px 0;
+}
+
+.card__button-buy {
+  border: none;
+  padding: 22px 92px;
+
+  background: rgb(112, 144, 139);
+  box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+
+  &:hover {
+    background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+  }
+}
+
+.card__button-text {
+  @include font-title(14px, 114%, 700);
+
+  font-family: "Raleway", "Arial", sans-serif;
+  color: #ffffff;
+
+}

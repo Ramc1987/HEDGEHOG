@@ -8,10 +8,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "CormorantInfant-Bold", "Arial", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 17px;
+  font-size: 14px;
   color: $color-first;
 }
 
@@ -19,9 +19,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.wrapper {
+.top-wrapper {
   background-image: url("data:image/svg+xml,%3Csvg width='320' height='406' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Ctitle%3Ebackground%3C/title%3E%3Crect fill='none' id='canvas_background' height='602' width='802' y='-1' x='-1'/%3E%3C/g%3E%3Cg%3E%3Ctitle%3ELayer 1%3C/title%3E%3Cpath id='svg_1' fill='%23EAEEEF' d='m320,0l-320,0l0,406c53.4449,-20.262 109.191,-30.986 166.5,-30.986c52.678,0 104.036,9.061 153.5,26.262l0,-401.276z'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
   height: 406px;
-  width: 320px;
+  width: 100%;
 }

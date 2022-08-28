@@ -8,7 +8,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="top-wrapper">
       <header class="header">
         <nav class="header-nav">
           <div class="header-nav__inner">
@@ -19,14 +19,14 @@
             </a>
             <ul class="header__user-list user-list">
               <li class="user-list__item">
-                <a href="tel:+79655698998" class="user-list__link user-list__link--call" aria-label="Позвоните нам">
+                <a class="user-list__item-link user-list__item-link--call" href="tel:+79655698998" aria-label="Позвоните нам">
                   <svg class="user-list__link-icon user-list__link-icon--call" width="13" height="11">
                     <use xlink:href="img/sprite.svg#call"></use>
                   </svg>
                 </a>
               </li>
               <li class="user-list__item">
-                <a href="#" class="user-list__link user-list__link--basket" aria-label="Корзина">
+                <a href="#" class="user-list__item-link user-list__item-link--basket" aria-label="Корзина">
                   <svg class="user-list__link-icon user-list__link-icon--basket" width="32" height="28">
                     <use xlink:href="img/sprite.svg#basket"></use>
                   </svg>
@@ -34,14 +34,69 @@
               </li>
             </ul>
           </div>
+          <div class="header__main-nav main-nav main-nav--open">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">каталог</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">о нас</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">контакты</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">галерея</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link--tel-menu" href="tel:+79655698998">+7 (965) 569-89-98</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <button class="header__toggle-menu header__toggle-menu--close" type="button">
+        <button class="header__toggle-menu" type="button">
           <span></span>
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </header>
+      <section class="promo-card">
+        <div class="card">
+          <h1 class="card__title">ежики</h1>
+          <p class="card__sub-title">тоже любят молоко</p>
+          <p class="card__description">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу мебель.</p>
+          <button class="card__button-buy">
+            <span class="card__button-text">Купить ёжика</span>
+          </button>
+        </div>
+      </section>
     </div>
-    <main class="main"></main>
+    <main class="main">
+      <section class="promo-advantages">
+        <ul class="promo-advantages__advantages-list advantages">
+          <li class="advantages__item advantages__item--hedgehog">
+            <div class="advantages__item-image">
+              <svg class="advantages__item-icon advantages__item-icon--hedgehog" width="43" height="43">
+                <use xlink:href="img/sprite.svg#hedgehog"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__item-image advantages__item-image--syringe">
+              <svg class="advantages__item-icon advantages__item-icon--syringe" width="43" height="43">
+                <use xlink:href="img/sprite.svg#syringe"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="advantages__item advantages__item--heart">
+            <div class="advantages__item-image">
+              <svg class="advantages__item-icon advantages__item-icon--heart" width="27" height="27">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
     <footer class="footer"></footer>
     <script src="./js/toggle-menu.js"></script>
   </body>

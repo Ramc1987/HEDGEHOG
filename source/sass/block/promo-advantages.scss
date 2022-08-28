@@ -1,0 +1,34 @@
+.promo-advantages {}
+
+.promo-advantages__advantages-list {
+  margin: 0 auto;
+  padding: 0;
+  width: 87.5%;
+  list-style-type: none;
+}
+
+.advantages__item-image {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50px;
+  box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
+
+  &--hedgehog {
+    background: #ffedcd;
+  }
+
+  &--syringe {
+    background: #e2f0df;
+  }
+
+  &--heart {
+    background: #70908B;
+  }
+}
+
+.advantages__item-icon {
+  &--hedgehog {
+    padding: 25px;
+  }
+}

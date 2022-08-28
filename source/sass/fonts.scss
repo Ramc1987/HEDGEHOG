@@ -1,14 +1,38 @@
 @font-face {
-  font-family: "Oswald-SemiBold";
-  src: url("../fonts/Oswald-SemiBold.woff2") format("woff2"), url("../fonts/Oswald-SemiBold.woff") format("woff");
+  font-family: "CormorantInfant-Bold";
+  src: url("../fonts/CormorantInfant-Bold.woff2") format("woff2"), url("../fonts/CormorantInfant-Bold.woff") format("woff");
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CormorantInfant-Regular";
+  src: url("../fonts/CormorantInfant-Regular.woff2") format("woff2"), url("../fonts/CormorantInfant-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;

@@ -9,8 +9,13 @@
     margin-bottom: 22px;
   }
 
+  &--syringe {
+    grid-row: 2/3;
+  }
+
   &--heart {
     margin-left: auto;
+    grid-row: 2/3;
   }
 }
 

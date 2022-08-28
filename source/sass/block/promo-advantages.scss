@@ -1,12 +1,14 @@
 .promo-advantages {
-  background: url("/source/img/content-img/image-promo.png") no-repeat;
+  background: url("../img/content-img/image-promo.png") no-repeat;
+  background-position: right -23px;
 }
 
 .promo-advantages__advantages-list {
-  margin: -70px auto 0;
-  padding: 0;
+  margin: -90px auto 0;
+  padding: 20px 0 0 0;
   width: 87.5%;
   list-style-type: none;
+
 }
 
 

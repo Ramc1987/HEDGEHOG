@@ -1,38 +1,12 @@
+.promo-advantages {
+  background: url("/source/img/content-img/image-promo.png") no-repeat;
+}
+
 .promo-advantages__advantages-list {
-  margin: 0 auto;
+  margin: -70px auto 0;
   padding: 0;
   width: 87.5%;
   list-style-type: none;
 }
 
-.advantages__item-image {
-  position: relative;
-  width: 92px;
-  height: 92px;
-  border-radius: 50px;
-  box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
 
-  &--hedgehog {
-    background: #ffedcd;
-  }
-
-  &--syringe {
-    background: #e2f0df;
-  }
-
-  &--heart {
-    background: #70908B;
-  }
-}
-
-.advantages__item-icon {
-  transform: translate(-50%, -50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-  &--syringe {
-    top: 56%;
-    left: 55%;
-  }
-}

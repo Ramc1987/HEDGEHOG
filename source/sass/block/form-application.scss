@@ -1,3 +1,7 @@
+.form-application {
+  background: #eaeeef;
+}
+
 .form-application__wrapper {
   width: 86%;
   margin: 0 auto;
@@ -8,6 +12,7 @@
 
   color: $color-first;
   margin: 0 0 25px 0;
+  padding: 41px 0 0 0;
 }
 
 .form-application__check-list {

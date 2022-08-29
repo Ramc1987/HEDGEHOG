@@ -1,0 +1,162 @@
+// .form-application {}
+
+.form-application__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.form-application__title {
+  @include font-title(24px, 120%, 700);
+
+  color: $color-first;
+  margin: 0 0 25px 0;
+}
+
+.form-application__check-list {
+  margin: 0 0 30px 0;
+  padding: 0;
+  list-style-type: none;
+  width: 71.5%;
+}
+
+.form-application__check-item {
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @include font-title(14px, 121%, 700);
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.form-application__check-name {
+  display: inline-block;
+  position: relative;
+}
+
+.form-application__check {
+  appearance: none;
+  position: absolute;
+
+  &:checked+.form-application__checkbox {
+    border: 2px solid #ffedcd;
+  }
+}
+
+.form-application__checkbox {
+  display: block;
+  transition: all ease-in-out 0.3s;
+
+  &--for-my {
+    padding: 16px 28px;
+    width: 115px;
+    color: #ffffff;
+
+    border: 2px solid #70908b;
+    border-radius: 61px;
+  }
+
+  &--for-my {
+    background: #70908b;
+  }
+
+  &--for-kids {
+    padding: 16px 22px;
+    width: 127px;
+    color: #70908b;
+    background: #ffffff;
+    border: 2px solid #70908b;
+    border-radius: 61px;
+  }
+
+  &--for-multiply {
+    padding: 16px 21px;
+    width: 156px;
+    color: #70908b;
+    background: #ffffff;
+    border: 2px solid #70908b;
+    border-radius: 61px;
+  }
+
+  &:active {
+    border: 2px solid #c4c4c4;
+  }
+
+  &:hover {
+    background: #70908b;
+    color: #ffffff;
+    box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
+  }
+}
+
+
+.form-application__quantity-animal {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-application__animal-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 70%;
+}
+
+.form-application__animal-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 199px;
+
+  &:not(:last-child) {
+    margin: 0 0 14px 0;
+  }
+}
+
+.form-application__animal-check {
+  padding: 0 0 0 21px;
+}
+
+.form-application__animalbox {
+  appearance: none;
+  position: absolute;
+
+  &:checked + .form-application__animal-checkbox::before {
+    display: block;
+  }
+}
+
+.form-application__animal-checkbox {
+  position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 14px;
+    height: 14px;
+    border: 1px solid #70908B;
+    border-radius: 50%;
+    margin-left: -21px;
+
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: #70908b;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      display: none;
+    }
+
+    &:hover {
+      border: 1px solid#C4C4C4;
+    }
+
+    &:active {
+      border: 1px solid #FFEDCD;
+    }
+}
+

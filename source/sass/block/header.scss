@@ -11,22 +11,17 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: end;
-  width: 100%;
-  margin: 0 auto;
-  height: 35px;
+  justify-content: space-between;
 }
 
 .header__toggle-menu {
+  margin: 0 86px 0 0;
   width: 25px;
   height: 14px;
-  position: absolute;
   transition-duration: 1s;
   cursor: pointer;
   border: none;
   padding: 0;
-  top: 30px;
-  left: 20px;
   background: transparent;
   z-index: 20;
 }

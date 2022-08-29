@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Document</title>
   </head>
   <body>
@@ -12,6 +13,10 @@
       <header class="header">
         <nav class="header-nav">
           <div class="header-nav__inner">
+            <button class="header__toggle-menu" type="button">
+          <span></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
             <a class="header__logo" href="index.html">
               <picture>
                 <img class="header__logo-image" src="./img/logo/header-logo-mob.svg" width="56" height="26" alt="Логотип сайта HEDGEHOG">
@@ -54,10 +59,6 @@
             </ul>
           </div>
         </nav>
-        <button class="header__toggle-menu" type="button">
-          <span></span>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </header>
       <section class="promo-card">
         <div class="card">
@@ -101,6 +102,62 @@
             <p class="advatages__item-descreption">Каждому ёжику мы дарим много внимания</p>
           </li>
         </ul>
+      </section>
+      <section class="form-application">
+        <div class="form-application__wrapper">
+          <h2 class="form-application__title">Заполните заявку и мы забронируем для Вас нового друга</h2>
+          <form class="form-application__data" method="post">
+            <ul class="form-application__check-list">
+              <li class="form-application__check-item">
+                <label class="form-application__check-name">
+                  <input class="form-application__check" type="radio" name="hedgehog" value="для себя" checked>
+                  <span class="form-application__checkbox form-application__checkbox--for-my">хочу ёжика для себя</span>
+                </label>
+              </li>
+              <li class="form-application__check-item">
+                <label class="form-application__check-name">
+                  <input class="form-application__check" type="radio" name="hedgehog" value="для детей">
+                  <span class="form-application__checkbox form-application__checkbox--for-kids">хочу ёжика для детей</span>
+                </label>
+              </li>
+              <li class="form-application__check-item">
+                <label class="form-application__check-name">
+                  <input class="form-application__check" type="radio" name="hedgehog" value="для разведения">
+                  <span class="form-application__checkbox form-application__checkbox--for-multiply">хочу ёжика для разведения</span>
+                </label>
+              </li>
+            </ul>
+            <fieldset class="form-application__quantity-animal">
+              <ul class="form-application__animal-list">
+                <li class="form-application__animal-item">
+                  <label class="form-application__animal-check">
+                  <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="1-2" checked>
+                  <span class="form-application__animal-checkbox"></span>
+                  <span class="form-application__title-checkbox">Мне нужен 1-2 ёжика</span>
+                </label>
+                </li>
+                <li class="form-application__animal-item">
+                  <label class="form-application__animal-check">
+                  <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="3-4">
+                  <span class="form-application__animal-checkbox"></span>
+                  <span class="form-application__title-checkbox">Мне нужны 3-4 ёжика</span>
+                </li>
+                <li class="form-application__animal-item">
+                  <label class="form-application__animal-check">
+                  <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="от 3">
+                  <span class="form-application__animal-checkbox"></span>
+                  <span class="form-application__title-checkbox">Мне нужны 3 и более ёжиков</span>
+                </li>
+                <li class="form-application__animal-item">
+                  <label class="form-application__animal-check">
+                  <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="не определено">
+                  <span class="form-application__animal-checkbox"></span>
+                  <span class="form-application__title-checkbox">Пока присматриваюсь</span>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer"></footer>

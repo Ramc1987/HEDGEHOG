@@ -38,6 +38,10 @@
   &--heart {
     background: #70908B;
   }
+
+  &:hover {
+    transform: scale(0.8);
+  }
 }
 
 .advantages__item-icon {

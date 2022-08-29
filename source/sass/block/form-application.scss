@@ -1,7 +1,5 @@
-// .form-application {}
-
 .form-application__wrapper {
-  width: 87.5%;
+  width: 86%;
   margin: 0 auto;
 }
 
@@ -21,7 +19,6 @@
 
 .form-application__check-item {
   box-sizing: border-box;
-  cursor: pointer;
 
   @include font-title(14px, 121%, 700);
 
@@ -33,6 +30,7 @@
 .form-application__check-name {
   display: inline-block;
   position: relative;
+  cursor: pointer;
 }
 
 .form-application__check {
@@ -94,7 +92,7 @@
 .form-application__quantity-animal {
   border: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 30px 0;
 }
 
 .form-application__animal-list {
@@ -117,6 +115,7 @@
 
 .form-application__animal-check {
   padding: 0 0 0 21px;
+  cursor: pointer;
 }
 
 .form-application__animalbox {
@@ -158,5 +157,13 @@
     &:active {
       border: 1px solid #FFEDCD;
     }
+}
+
+.form-application__button-buy {
+  padding: 26px 87px;
+}
+
+.form-application__data-client {
+  margin: 0 0 30px 0;
 }
 

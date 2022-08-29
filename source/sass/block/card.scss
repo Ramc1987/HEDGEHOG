@@ -33,16 +33,6 @@
   width: 100%;
   border: none;
   padding: 22px 91px;
-
-  background: rgb(112, 144, 139);
-  box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
-  border-radius: 40px;
-  cursor: pointer;
-  transition: all ease-in-out 0.3s;
-
-  &:hover {
-    background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
-  }
 }
 
 .card__button-text {
@@ -50,5 +40,4 @@
 
   font-family: "Raleway", "Arial", sans-serif;
   color: #ffffff;
-
 }

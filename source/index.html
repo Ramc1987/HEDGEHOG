@@ -65,7 +65,7 @@
           <h1 class="card__title">ежики</h1>
           <p class="card__sub-title">тоже любят молоко</p>
           <p class="card__description">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу мебель.</p>
-          <button class="card__button-buy">
+          <button class="card__button-buy button">
             <span class="card__button-text">Купить ёжика</span>
           </button>
         </div>
@@ -76,7 +76,7 @@
         <ul class="promo-advantages__advantages-list advantages">
           <li class="advantages__item advantages__item--hedgehog">
             <div class="advantages__item-image advantages__item-image--hedgehog">
-              <svg class="advantages__item-icon advantages__item-icon--hedgehog" width="36" height="20">
+              <svg class="advantages__item-icon advantages__item-icon--hedgehog" width="36" height="19">
                 <use xlink:href="img/sprite.svg#hedgehog"></use>
               </svg>
             </div>
@@ -131,20 +131,20 @@
               <ul class="form-application__animal-list">
                 <li class="form-application__animal-item">
                   <label class="form-application__animal-check">
-                  <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="1-2" checked>
+                  <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="1" checked>
                   <span class="form-application__animal-checkbox"></span>
                   <span class="form-application__title-checkbox">Мне нужен 1-2 ёжика</span>
                 </label>
                 </li>
                 <li class="form-application__animal-item">
                   <label class="form-application__animal-check">
-                  <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="3-4">
+                  <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="3">
                   <span class="form-application__animal-checkbox"></span>
                   <span class="form-application__title-checkbox">Мне нужны 3-4 ёжика</span>
                 </li>
                 <li class="form-application__animal-item">
                   <label class="form-application__animal-check">
-                  <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="от 3">
+                  <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="4">
                   <span class="form-application__animal-checkbox"></span>
                   <span class="form-application__title-checkbox">Мне нужны 3 и более ёжиков</span>
                 </li>
@@ -156,6 +156,23 @@
                 </li>
               </ul>
             </fieldset>
+            <fieldset class="form-application__data-client data-client">
+              <ul class="data-client__list-input">
+                <li class="data-client__input-item">
+                  <input class="data-client__input-field" name="name" type="text" placeholder="Ваше имя">
+                </li>
+                <li class="data-client__input-item">
+                  <input class="data-client__input-field" name="phone" type="tel" placeholder="Ваш телефон">
+                </li>
+                <li class="data-client__input-item">
+                  <input class="data-client__input-field" name="email" type="email" placeholder="Ваш e-mail">
+                </li>
+                <li class="data-client__input-item">
+                  <input class="data-client__input-field" name="comment" type="text" placeholder="Комментарий к заявке">
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button form-application__button-buy" type="submit">Купить ёжика</button>
           </form>
         </div>
       </section>

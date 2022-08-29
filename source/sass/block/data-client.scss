@@ -1,0 +1,32 @@
+.data-client {
+  border: none;
+  padding: 0;
+  max-width: 280px;
+}
+
+.data-client__list-input {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.data-client__input-item {
+  width: 87.5%;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.data-client__input-field {
+  width: 100%;
+  border: none;
+  background: #F8F8F8;
+  border-radius: 8px;
+  padding: 23px 0 23px 21px;
+
+  &::placeholder {
+    @include font-title(14px, 114%, 400);
+    font-family: "Raleway" Arial, Helvetica, sans-serif;
+  }
+}

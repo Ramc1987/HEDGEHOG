@@ -1,0 +1,27 @@
+.social {
+  padding: 10px 0 0 0;
+  list-style-type: none;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+
+    &:not(:last-child) {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  &__image-icon {
+    display: block;
+  }
+}
+
+
+

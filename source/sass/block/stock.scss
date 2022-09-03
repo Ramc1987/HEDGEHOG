@@ -1,9 +1,30 @@
-.stock__icon {}
-
-.stock__title {
-  width: 215px;
+.stock .__container{
+  padding: 50px 0 50px 21px;
+  width: 191px;
+  margin: 0;
 }
 
-.stock__counter-animal {}
+.stock__icon {
+  margin: 0 0 10px 0;
+}
 
-.stock__description {}
+.stock__title {
+  @include font-title(24px, 120%, 700);
+
+  color: $color-first;
+  width: 215px;
+  margin: 0 0 27px 0;
+}
+
+.stock__counter-animal {
+  display: block;
+}
+
+.stock__description {
+  @include font-title(14px, 157%, 400);
+
+  font-family: "Raleway", "Arial", sans-serif;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: $color-first;
+  margin: 0;
+}

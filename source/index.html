@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Document</title>
   </head>
@@ -103,21 +103,77 @@
           </li>
         </ul>
       </section>
-      <section class="slider">
+      <section class="swiper">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner swiper-slide__inner--first">
+                <div class="swiper-slide__content">
+                  <ul class="swiper-slide__info-list">
+                    <li class="swiper-slide__info-item">
+                      <svg class="swiper-slide__item-icon" width="10" height="10">
+                        <use xlink:href="img/sprite.svg#syringe-info">
+                      </svg>
+                      <span class="swiper-slide__item-text">привит</span>
+                    </li>
+                    <li class="swiper-slide__info-item">
+                      <button class="swiper-slide__button-heart" type="button">
+                        <svg class="swiper-slide__item-icon" width="10" height="9">
+                        <use xlink:href="img/sprite.svg#heart-info">
+                      </svg>
+                        <span class="swiper-slide__likes-number">1895</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <h2 class="swiper-slide__title">Ежик “Евгений”</h2>
+                  <p class="swiper-slide__description">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной,&nbsp;любит внимаение </p>
+                  <span class="swiper-slide__price">3000</span>
+                  <span class="swiper-slide__price-sale">1500 р</span>
+                </div>
+              </div>
+              <button class="swiper-slide__add-product" type="button">
+                  <svg class="swiper-slide__product-icon" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#pluse"></use>
+                  </svg>
+              </button>
+              <img class="swiper-slide__image" src="./img/content-img/preview-one.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide__inner swiper-slide__inner--second">
+                <div class="swiper-slide__content">
+                  <ul class="swiper-slide__info-list">
+                    <li class="swiper-slide__info-item">
+                      <svg class="swiper-slide__item-icon" width="10" height="10">
+                        <use xlink:href="img/sprite.svg#syringe-info">
+                      </svg>
+                      <span class="swiper-slide__item-text">привит</span>
+                    </li>
+                    <li class="swiper-slide__info-item">
+                      <button class="swiper-slide__button-heart" type="button">
+                        <svg class="swiper-slide__item-icon" width="10" height="9">
+                        <use xlink:href="img/sprite.svg#heart-info">
+                      </svg>
+                        <span class="swiper-slide__likes-number">1895</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <h2 class="swiper-slide__title">Ежик “Евгений”</h2>
+                  <p class="swiper-slide__description">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной,&nbsp;любит внимаение </p>
+                  <span class="swiper-slide__price">3000</span>
+                  <span class="swiper-slide__price-sale">1500 р</span>
+                </div>
+              </div>
+              <button class="swiper-slide__add-product" type="button">
+                  <svg class="swiper-slide__product-icon" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#pluse"></use>
+                  </svg>
+              </button>
+              <img class="swiper-slide__image" src="./img/content-img/preview-one.png" alt="">
+            </div>
           </div>
-        <div class="swiper-pagination"></div>
-    </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </section>
       <section class="form-application">
         <div class="form-application__wrapper">
@@ -194,15 +250,17 @@
       </section>
       <section class="stock">
         <div class="__container">
-          <svg class="stock__icon" width="36" height="19">
+          <svg class="stock__icon" width="37" height="22">
             <use xlink:href="img/sprite.svg#hedgehog-stock"></use>
           </svg>
-          <h2 class="stock__title">У на осталось еще:<span class="stock__counter-animal">25</span>ежиков</h2>
+          <h2 class="stock__title">У на осталось еще:<span class="stock__counter-animal"></span>25 ежиков</h2>
           <p class="stock__description">Торопитесь! Акция действует до 26. 02. 2023</p>
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="__container"></div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="./js/toggle-menu.js"></script>

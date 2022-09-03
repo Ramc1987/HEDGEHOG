@@ -3,7 +3,14 @@
   width: 191px;
   margin: 0;
 
+  @media (min-width: 767px) {
+    transition: 0.6s;
+    transform: scale(0);
+  }
+
   @media (min-width: $tablet) {
+    transform: scale(1);
+    transition: .8s;
     margin: 0 auto;
   }
 }

@@ -16,13 +16,16 @@
 }
 
 .main-nav__list {
+  width: 250px;
   margin: 0;
   padding: 100px 0 0 20px;
   list-style-type: none;
 }
 
 .main-nav__item {
+  transition: .4s;
   cursor: pointer;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
 
   &:nth-child(1) {
     margin-bottom: 19px
@@ -43,12 +46,19 @@
   &:nth-child(5) {
     margin-bottom: 41px
   }
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
 }
 
 .main-nav__item-link {
+  padding: 10px 0 10px;
   text-transform: uppercase;
   text-decoration: none;
   color: $color-first;
+  display: block;
 
   @include font-title(18px, 122%);
 

@@ -3,9 +3,9 @@ $color-second: #444444;
 $decor-color: #63d1bb;
 $hover-color: #62d1ba;
 $mobile-width: 320px;
-$mobile-rotate: 630px;
-$desktop-width: 1150px;
+$mobile-rotate: 480px;
 $tablet: 768px;
+$desktop-width: 1150px;
 
 @mixin font-title($fs: 14px, $lh: 24px, $fw: 700) {
   font-family: "CormorantInfant-Bold", "Arial", sans-serif;

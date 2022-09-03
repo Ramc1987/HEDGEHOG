@@ -2,6 +2,10 @@
   padding: 50px 0 50px 21px;
   width: 191px;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+  }
 }
 
 .stock__icon {
@@ -14,6 +18,10 @@
   color: $color-first;
   width: 215px;
   margin: 0 0 27px 0;
+
+  @media (min-width: $tablet) {
+    @include font-title(26px, 120%, 700);
+  }
 }
 
 .stock__counter-animal {
@@ -27,4 +35,8 @@
   font-feature-settings: 'pnum' on, 'lnum' on;
   color: $color-first;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    @include font-title(18px, 120%, 700);
+  }
 }

@@ -1,10 +1,26 @@
 .form-application {
   background: #eaeeef;
+
+  @media (min-width: $tablet) {
+    background: #ffffff;
+  }
 }
 
 .form-application__wrapper {
   width: 86%;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    padding: 0 29px;
+    border-radius: 30px;
+    background: #eaeeef;
+    width: 88.6%;
+  }
+
+  @media (min-width: 1197px) {
+    max-width: 1197px;
+    margin: 0 auto;
+  }
 }
 
 .form-application__title {
@@ -15,11 +31,30 @@
   padding: 41px 0 0 0;
 }
 
+
+.form-application__data {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-application__wrapper-field {
+  @media (min-width: $mobile-rotate) {
+      display: flex;
+      transition: .5s;
+  }
+}
+
 .form-application__check-list {
   margin: 0 0 30px 0;
   padding: 0;
   list-style-type: none;
   width: 71.5%;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
+  }
 }
 
 .form-application__check-item {
@@ -29,6 +64,10 @@
 
   &:not(:last-child) {
     margin-bottom: 16px;
+
+    @media (min-width: $tablet) {
+        flex-grow: 1;
+    }
   }
 }
 
@@ -165,8 +204,9 @@
 }
 
 .form-application__button-buy {
+  max-width: 300px;
   padding: 26px 87px;
-  margin: 0 0 39px 0;
+  margin: 0 auto 39px;
 }
 
 .form-application__data-client {

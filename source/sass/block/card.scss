@@ -1,6 +1,12 @@
 .card {
   width: 87.5%;
   margin: 0 auto;
+
+  @media (min-width: $mobile-rotate) {
+    width: 67%;
+    max-width: 630px;
+    text-align: center;
+  }
 }
 
 .card__title {
@@ -30,9 +36,13 @@
 }
 
 .card__button-buy {
-  width: 100%;
+  max-width: 300px;
   border: none;
   padding: 22px 91px;
+
+  @media (min-width: $mobile-rotate) {
+
+  }
 }
 
 .card__button-text {

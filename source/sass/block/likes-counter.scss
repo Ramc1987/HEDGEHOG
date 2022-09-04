@@ -1,0 +1,16 @@
+.likes-counter {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.likes-counter__icon {
+  margin-right: 2px;
+}
+
+.slider__likes-number {
+  @include font-title(10px, 160%, 400);
+  color: $color-first;
+  text-transform: lowercase;
+}

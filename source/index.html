@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Document</title>
   </head>
@@ -103,269 +102,73 @@
           </li>
         </ul>
       </section>
-      <section class="swiper">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="swiper-slide__inner swiper-slide__inner--first">
-                <div class="swiper-slide__content">
-                  <ul class="swiper-slide__info-list">
-                    <li class="swiper-slide__info-item">
-                      <svg class="swiper-slide__item-icon" width="10" height="10">
-                        <use xlink:href="img/sprite.svg#syringe-info">
+      <section class="slider">
+        <div class="__container-slider">
+          <ul class="slider__slide-list">
+            <li class="slider__slide item1">
+              <div class="slider__slide-content">
+                  <ul class="slider__slide-navbar">
+                    <li class="slider__navbar-item">
+                      <svg class="slider__navbar-icon" width="10" height="10">
+                        <use xlink:href="img/sprite.svg#syringe-info"></use>
                       </svg>
-                      <span class="swiper-slide__item-text">привит</span>
+                      <span class="slider__navbar-text">привит</span>
                     </li>
-                    <li class="swiper-slide__info-item">
-                      <button class="swiper-slide__button-heart" type="button">
-                        <svg class="swiper-slide__item-icon" width="10" height="9">
-                        <use xlink:href="img/sprite.svg#heart-info">
-                      </svg>
-                        <span class="swiper-slide__likes-number">1895</span>
+                    <li class="slider__navbar-item">
+                      <button class="slider__navbar-button likes-counter" type="button">
+                        <svg class="likes-counter__icon" width="10" height="9">
+                          <use xlink:href="img/sprite.svg#heart-info"></use>
+                        </svg>
+                        <span class="slider__likes-number">1895</span>
                       </button>
                     </li>
                   </ul>
-                  <h2 class="swiper-slide__title">Ежик “Евгений”</h2>
-                  <p class="swiper-slide__description">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной,&nbsp;любит внимаение </p>
-                  <span class="swiper-slide__price">3000</span>
-                  <span class="swiper-slide__price-sale">1500 р</span>
-                </div>
+                  <h2 class="slider__slide-title">Ежик “Евгений”</h2>
+                  <p class="slider__slide-description">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной,&nbsp;любит внимаение </p>
+                  <span class="slider__slide-price">3000</span>
+                  <span class="slider__slide_price-sale">1500 р</span>
               </div>
-              <button class="swiper-slide__add-product" type="button">
-                  <svg class="swiper-slide__product-icon" width="24" height="24">
-                    <use xlink:href="img/sprite.svg#pluse"></use>
-                  </svg>
+              <button class="slider__button-add" type="button">
+                <svg class="slider__button-icon" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#pluse"></use>
+                </svg>
               </button>
-              <img class="swiper-slide__image" src="./img/content-img/preview-one.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__inner swiper-slide__inner--second">
-                <div class="swiper-slide__content">
-                  <ul class="swiper-slide__info-list">
-                    <li class="swiper-slide__info-item">
-                      <svg class="swiper-slide__item-icon" width="10" height="10">
-                        <use xlink:href="img/sprite.svg#syringe-info">
+              <img class="slider__slide-image" src="./img/content-img/preview-one.png" width="177" height="129" alt="">
+            </li>
+            <li class="slider__slide item1">
+              <div class="slider__slide-content">
+                  <ul class="slider__slide-navbar">
+                    <li class="slider__navbar-item">
+                      <svg class="slider__navbar-icon" width="10" height="10">
+                        <use xlink:href="img/sprite.svg#syringe-info"></use>
                       </svg>
-                      <span class="swiper-slide__item-text">привит</span>
+                      <span class="slider__navbar-text">привит</span>
                     </li>
-                    <li class="swiper-slide__info-item">
-                      <button class="swiper-slide__button-heart" type="button">
-                        <svg class="swiper-slide__item-icon" width="10" height="9">
-                        <use xlink:href="img/sprite.svg#heart-info">
-                      </svg>
-                        <span class="swiper-slide__likes-number">1895</span>
+                    <li class="slider__navbar-item">
+                      <button class="slider__navbar-button likes-counter" type="button">
+                        <svg class="likes-counter__icon" width="10" height="9">
+                          <use xlink:href="img/sprite.svg#heart-info"></use>
+                        </svg>
+                        <span class="slider__likes-number">1895</span>
                       </button>
                     </li>
                   </ul>
-                  <h2 class="swiper-slide__title">Ежик “Евгений”</h2>
-                  <p class="swiper-slide__description">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной,&nbsp;любит внимаение </p>
-                  <span class="swiper-slide__price">3000</span>
-                  <span class="swiper-slide__price-sale">1500 р</span>
-                </div>
+                  <h2 class="slider__slide-title">Ежик “Евгений”</h2>
+                  <p class="slider__slide-description">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной,&nbsp;любит внимаение </p>
+                  <span class="slider__slide-price">3000</span>
+                  <span class="slider__slide_price-sale">1500 р</span>
               </div>
-              <button class="swiper-slide__add-product" type="button">
-                  <svg class="swiper-slide__product-icon" width="24" height="24">
-                    <use xlink:href="img/sprite.svg#pluse"></use>
-                  </svg>
+              <button class="slider__button-add" type="button">
+                <svg class="slider__button-icon" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#pluse"></use>
+                </svg>
               </button>
-              <img class="swiper-slide__image" src="./img/content-img/preview-one.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__inner swiper-slide__inner--first">
-                <div class="swiper-slide__content">
-                  <ul class="swiper-slide__info-list">
-                    <li class="swiper-slide__info-item">
-                      <svg class="swiper-slide__item-icon" width="10" height="10">
-                        <use xlink:href="img/sprite.svg#syringe-info">
-                      </svg>
-                      <span class="swiper-slide__item-text">привит</span>
-                    </li>
-                    <li class="swiper-slide__info-item">
-                      <button class="swiper-slide__button-heart" type="button">
-                        <svg class="swiper-slide__item-icon" width="10" height="9">
-                        <use xlink:href="img/sprite.svg#heart-info">
-                      </svg>
-                        <span class="swiper-slide__likes-number">1895</span>
-                      </button>
-                    </li>
-                  </ul>
-                  <h2 class="swiper-slide__title">Ежик “Евгений”</h2>
-                  <p class="swiper-slide__description">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной,&nbsp;любит внимаение </p>
-                  <span class="swiper-slide__price">3000</span>
-                  <span class="swiper-slide__price-sale">1500 р</span>
-                </div>
-              </div>
-              <button class="swiper-slide__add-product" type="button">
-                  <svg class="swiper-slide__product-icon" width="24" height="24">
-                    <use xlink:href="img/sprite.svg#pluse"></use>
-                  </svg>
-              </button>
-              <img class="swiper-slide__image" src="./img/content-img/preview-one.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__inner swiper-slide__inner--second">
-                <div class="swiper-slide__content">
-                  <ul class="swiper-slide__info-list">
-                    <li class="swiper-slide__info-item">
-                      <svg class="swiper-slide__item-icon" width="10" height="10">
-                        <use xlink:href="img/sprite.svg#syringe-info">
-                      </svg>
-                      <span class="swiper-slide__item-text">привит</span>
-                    </li>
-                    <li class="swiper-slide__info-item">
-                      <button class="swiper-slide__button-heart" type="button">
-                        <svg class="swiper-slide__item-icon" width="10" height="9">
-                        <use xlink:href="img/sprite.svg#heart-info">
-                      </svg>
-                        <span class="swiper-slide__likes-number">1895</span>
-                      </button>
-                    </li>
-                  </ul>
-                  <h2 class="swiper-slide__title">Ежик “Евгений”</h2>
-                  <p class="swiper-slide__description">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной,&nbsp;любит внимаение </p>
-                  <span class="swiper-slide__price">3000</span>
-                  <span class="swiper-slide__price-sale">1500 р</span>
-                </div>
-              </div>
-              <button class="swiper-slide__add-product" type="button">
-                  <svg class="swiper-slide__product-icon" width="24" height="24">
-                    <use xlink:href="img/sprite.svg#pluse"></use>
-                  </svg>
-              </button>
-              <img class="swiper-slide__image" src="./img/content-img/preview-one.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__inner swiper-slide__inner--first">
-                <div class="swiper-slide__content">
-                  <ul class="swiper-slide__info-list">
-                    <li class="swiper-slide__info-item">
-                      <svg class="swiper-slide__item-icon" width="10" height="10">
-                        <use xlink:href="img/sprite.svg#syringe-info">
-                      </svg>
-                      <span class="swiper-slide__item-text">привит</span>
-                    </li>
-                    <li class="swiper-slide__info-item">
-                      <button class="swiper-slide__button-heart" type="button">
-                        <svg class="swiper-slide__item-icon" width="10" height="9">
-                        <use xlink:href="img/sprite.svg#heart-info">
-                      </svg>
-                        <span class="swiper-slide__likes-number">1895</span>
-                      </button>
-                    </li>
-                  </ul>
-                  <h2 class="swiper-slide__title">Ежик “Евгений”</h2>
-                  <p class="swiper-slide__description">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной,&nbsp;любит внимаение </p>
-                  <span class="swiper-slide__price">3000</span>
-                  <span class="swiper-slide__price-sale">1500 р</span>
-                </div>
-              </div>
-              <button class="swiper-slide__add-product" type="button">
-                  <svg class="swiper-slide__product-icon" width="24" height="24">
-                    <use xlink:href="img/sprite.svg#pluse"></use>
-                  </svg>
-              </button>
-              <img class="swiper-slide__image" src="./img/content-img/preview-one.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__inner swiper-slide__inner--second">
-                <div class="swiper-slide__content">
-                  <ul class="swiper-slide__info-list">
-                    <li class="swiper-slide__info-item">
-                      <svg class="swiper-slide__item-icon" width="10" height="10">
-                        <use xlink:href="img/sprite.svg#syringe-info">
-                      </svg>
-                      <span class="swiper-slide__item-text">привит</span>
-                    </li>
-                    <li class="swiper-slide__info-item">
-                      <button class="swiper-slide__button-heart" type="button">
-                        <svg class="swiper-slide__item-icon" width="10" height="9">
-                        <use xlink:href="img/sprite.svg#heart-info">
-                      </svg>
-                        <span class="swiper-slide__likes-number">1895</span>
-                      </button>
-                    </li>
-                  </ul>
-                  <h2 class="swiper-slide__title">Ежик “Евгений”</h2>
-                  <p class="swiper-slide__description">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной,&nbsp;любит внимаение </p>
-                  <span class="swiper-slide__price">3000</span>
-                  <span class="swiper-slide__price-sale">1500 р</span>
-                </div>
-              </div>
-              <button class="swiper-slide__add-product" type="button">
-                  <svg class="swiper-slide__product-icon" width="24" height="24">
-                    <use xlink:href="img/sprite.svg#pluse"></use>
-                  </svg>
-              </button>
-              <img class="swiper-slide__image" src="./img/content-img/preview-one.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__inner swiper-slide__inner--first">
-                <div class="swiper-slide__content">
-                  <ul class="swiper-slide__info-list">
-                    <li class="swiper-slide__info-item">
-                      <svg class="swiper-slide__item-icon" width="10" height="10">
-                        <use xlink:href="img/sprite.svg#syringe-info">
-                      </svg>
-                      <span class="swiper-slide__item-text">привит</span>
-                    </li>
-                    <li class="swiper-slide__info-item">
-                      <button class="swiper-slide__button-heart" type="button">
-                        <svg class="swiper-slide__item-icon" width="10" height="9">
-                        <use xlink:href="img/sprite.svg#heart-info">
-                      </svg>
-                        <span class="swiper-slide__likes-number">1895</span>
-                      </button>
-                    </li>
-                  </ul>
-                  <h2 class="swiper-slide__title">Ежик “Евгений”</h2>
-                  <p class="swiper-slide__description">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной,&nbsp;любит внимаение </p>
-                  <span class="swiper-slide__price">3000</span>
-                  <span class="swiper-slide__price-sale">1500 р</span>
-                </div>
-              </div>
-              <button class="swiper-slide__add-product" type="button">
-                  <svg class="swiper-slide__product-icon" width="24" height="24">
-                    <use xlink:href="img/sprite.svg#pluse"></use>
-                  </svg>
-              </button>
-              <img class="swiper-slide__image" src="./img/content-img/preview-one.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-slide__inner swiper-slide__inner--second">
-                <div class="swiper-slide__content">
-                  <ul class="swiper-slide__info-list">
-                    <li class="swiper-slide__info-item">
-                      <svg class="swiper-slide__item-icon" width="10" height="10">
-                        <use xlink:href="img/sprite.svg#syringe-info">
-                      </svg>
-                      <span class="swiper-slide__item-text">привит</span>
-                    </li>
-                    <li class="swiper-slide__info-item">
-                      <button class="swiper-slide__button-heart" type="button">
-                        <svg class="swiper-slide__item-icon" width="10" height="9">
-                        <use xlink:href="img/sprite.svg#heart-info">
-                      </svg>
-                        <span class="swiper-slide__likes-number">1895</span>
-                      </button>
-                    </li>
-                  </ul>
-                  <h2 class="swiper-slide__title">Ежик “Евгений”</h2>
-                  <p class="swiper-slide__description">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной,&nbsp;любит внимаение </p>
-                  <span class="swiper-slide__price">3000</span>
-                  <span class="swiper-slide__price-sale">1500 р</span>
-                </div>
-              </div>
-              <button class="swiper-slide__add-product" type="button">
-                  <svg class="swiper-slide__product-icon" width="24" height="24">
-                    <use xlink:href="img/sprite.svg#pluse"></use>
-                  </svg>
-              </button>
-              <img class="swiper-slide__image" src="./img/content-img/preview-one.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+              <img class="slider__slide-image" src="./img/content-img/preview-one.png" width="177" height="129" alt="">
+            </li>
+          </ul>
         </div>
+        <div class="slider__button-prev"></div>
+        <div class="slider__button-next"></div>
       </section>
       <section class="form-application">
         <div class="form-application__wrapper">
@@ -396,26 +199,29 @@
                 <ul class="form-application__animal-list">
                   <li class="form-application__animal-item">
                     <label class="form-application__animal-check">
-                    <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="1" checked>
+                      <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="1" checked>
+                    </label>
                     <span class="form-application__animal-checkbox"></span>
                     <span class="form-application__title-checkbox">Мне нужен 1-2 ёжика</span>
-                  </label>
                   </li>
                   <li class="form-application__animal-item">
                     <label class="form-application__animal-check">
-                    <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="3">
+                      <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="3">
+                    </label>
                     <span class="form-application__animal-checkbox"></span>
                     <span class="form-application__title-checkbox">Мне нужны 3-4 ёжика</span>
                   </li>
                   <li class="form-application__animal-item">
                     <label class="form-application__animal-check">
-                    <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="4">
+                      <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="4">
+                    </label>
                     <span class="form-application__animal-checkbox"></span>
                     <span class="form-application__title-checkbox">Мне нужны 3 и более ёжиков</span>
                   </li>
                   <li class="form-application__animal-item">
                     <label class="form-application__animal-check">
-                    <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="не определено">
+                      <input class="form-application__animalbox" type="radio" name="quantity-thedgehog" value="не определено">
+                    </label>
                     <span class="form-application__animal-checkbox"></span>
                     <span class="form-application__title-checkbox">Пока присматриваюсь</span>
                   </li>
@@ -425,13 +231,13 @@
             <fieldset class="form-application__data-client data-client">
               <ul class="data-client__list-input">
                 <li class="data-client__input-item">
-                  <input class="data-client__input-field" name="name" type="text" placeholder="Ваше имя">
+                  <input class="data-client__input-field" name="name" type="text" required placeholder="Ваше имя">
                 </li>
                 <li class="data-client__input-item">
-                  <input class="data-client__input-field" name="phone" type="tel" placeholder="Ваш телефон">
+                  <input class="data-client__input-field" name="phone" type="tel" required placeholder="Ваш телефон">
                 </li>
                 <li class="data-client__input-item">
-                  <input class="data-client__input-field" name="email" type="email" placeholder="Ваш e-mail">
+                  <input class="data-client__input-field" name="email" type="email" required placeholder="Ваш e-mail">
                 </li>
                 <li class="data-client__input-item">
                   <input class="data-client__input-field" name="comment" type="text" placeholder="Комментарий к заявке">
@@ -502,8 +308,6 @@
       </p>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
     <script src="./js/toggle-menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,278 @@
+// .swiper-wrapper {
+//   transform: translate3d(18px, 0, 0);
+//   width: 320px;
+//   margin: 0 auto 54px;
+// }
+
+// .swiper-slide {
+//   position: relative;
+//   min-width: 243px;
+//   max-width: 243px;
+// }
+
+// .swiper-slide__inner {
+//   clip-path: polygon(100.00% 0.00%, 100.00% 75.31%, 80.02% 100.00%, 0.00% 100%, 0.00% 0.00%);
+//   box-shadow: 4px 4px 40px #F1F1F1;
+//   border-radius: 20px;
+
+//   &--first {
+//     background: #ffedcd;
+//   }
+
+//   &--second {
+//     background: #e2f0df;
+//   }
+// }
+
+// .swiper-slide__content {
+//   position: relative;
+//   padding: 12px 19px 18px 29px;
+// }
+
+// .swiper-slide__price {
+//   @include font-title(20px, 120%, 700);
+//   text-decoration-line: line-through;
+//   color: #C2CCCA;
+// }
+
+// .swiper-slide__price-sale {
+//   @include font-title(40px, 120%, 700);
+//   color: $color-first;
+//   display: block;
+// }
+
+// .swiper-slide__info-list {
+//   margin: 0 0 15px 0;
+//   padding: 0;
+//   list-style-type: none;
+//   display: flex;
+//   justify-content: end;
+// }
+
+// .swiper-slide__info-item {
+//   display: flex;
+//   align-items: center;
+
+//   &:not(:last-child) {
+//     margin-right: 18px;
+//   }
+// }
+
+// .swiper-slide__item-icon {
+//   margin-right: 2px;
+// }
+
+// .swiper-slide__button-heart {
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+//   background: transparent;
+//   cursor: pointer;
+// }
+
+// .swiper-slide__item-text {
+//   @include font-title(10px, 160%, 400);
+//   color: $color-first;
+//   text-transform: lowercase;
+//   font-feature-settings: 'pnum' on, 'lnum' on;
+// }
+
+// .swiper-slide__likes-number {
+//   @include font-title(10px, 160%, 400);
+//   color: $color-first;
+//   text-transform: lowercase;
+// }
+
+// .swiper-slide__title {
+//   margin: 0 0 6px 0;
+
+//   @include font-title(30px, 99%, 700);
+// }
+
+// .swiper-slide__description {
+//   width: 122px;
+//   margin: 0;
+//   @include font-title(11px, 141.9%, 400);
+
+//   font-family: "Raleway", "Arial", sans-serif;
+//   color: #000000;
+// }
+
+// .swiper-slide__image {
+//   max-width: 100%;
+//   position: absolute;
+//   top: 130px;
+//   right: -38px;
+//   z-index: 1000;
+// }
+
+// .swiper-button-prev,
+// .swiper-button-next {
+
+//   &::after {
+//     font-size: 24px;
+//     color: #70908B;
+//     display: none;
+//   }
+// }
+
+// .swiper-slide__add-product {
+//   position: absolute;
+//     bottom: 0;
+//     right: 0;
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+//   background: transparent;
+// }
+
+// .swiper-slide__product-icon {
+//   display: block;
+// }
+
+.slider {
+}
+
+.__container-slider {
+  width: 87.5%;
+  margin: 0 auto 19px;
+}
+
+.slider__slide-list {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 50px auto;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slider__slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 243px;
+  font-size: 14px;
+  box-shadow: 4px 4px 40px #F1F1F1;
+  border-radius: 20px;
+  scroll-snap-align: start;
+
+  &:not(:last-child) {
+    margin-right: 34px;
+  }
+}
+
+.item1 {
+  background: #ffedcd;
+  clip-path: polygon(100.00% 0.00%, 100.00% 75.31%, 80.02% 100.00%, 0.00% 100%, 0.00% 0.00%);
+}
+
+.item2 {
+  background: #e2f0df;
+}
+
+.slider__slide-content {
+  position: relative;
+  padding: 12px 19px 18px 29px;
+}
+
+.slider__slide-navbar {
+  margin: 0 0 15px 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+}
+
+.slider__navbar-item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+}
+
+.slider__navbar-icon {
+  margin-right: 2px;
+}
+
+.slider__navbar-text {
+  @include font-title(10px, 160%, 400);
+
+
+  color: $color-first;
+  text-transform: lowercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.slider__navbar-button {
+  margin: 0;
+}
+
+.slider__slide-title {
+  @include font-title(30px, 99%, 700);
+
+
+  margin: 0 0 6px 0;
+}
+
+.slider__slide-description {
+  @include font-title(11px, 141.9%, 400);
+
+
+  font-family: "Raleway", "Arial", sans-serif;
+  width: 122px;
+  color: #000000;
+  margin: 0;
+}
+
+.slider__slide-price {
+  @include font-title(20px, 120%, 700);
+
+
+  text-decoration-line: line-through;
+  color: #C2CCCA;
+}
+
+.slider__slide_price-sale {
+  @include font-title(40px, 120%, 700);
+
+
+  color: $color-first;
+  display: block;
+}
+
+.slider__button-add {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.slider__button-icon {
+  display: block;
+}
+
+.slider__slide-image {
+  max-width: 100%;
+  position: absolute;
+  top: 130px;
+  right: -38px;
+  z-index: 1000;
+}
+
+.slider__button-prev,
+.slider__button-next {
+
+  &::after {
+    font-size: 24px;
+    color: #70908B;
+    display: none;
+  }
+}

@@ -81,14 +81,19 @@
   appearance: none;
   position: absolute;
 
-  &:checked+.form-application__checkbox {
-    border: 2px solid #ffedcd;
+  &:checked + .form-application__checkbox {
+    perspective: 300;
+    background: #70908b;
+    color: #ffffff;
   }
 }
 
 .form-application__checkbox {
   display: block;
+  background: #ffffff;
   transition: all ease-in-out 0.3s;
+  color: #70908B;
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
 
   &--for-my {
     padding: 16px 28px;
@@ -100,7 +105,7 @@
   }
 
   &--for-my {
-    background: #70908b;
+    color: #70908b;
   }
 
   &--for-kids {
@@ -119,10 +124,6 @@
     background: #ffffff;
     border: 2px solid #70908b;
     border-radius: 61px;
-  }
-
-  &:active {
-    border: 2px solid #c4c4c4;
   }
 
   &:hover {
@@ -162,15 +163,6 @@
   cursor: pointer;
 }
 
-.form-application__animalbox {
-  appearance: none;
-  position: absolute;
-
-  &:checked + .form-application__animal-checkbox::before {
-    display: block;
-  }
-}
-
 .form-application__animal-checkbox {
   position: absolute;
     top: 50%;
@@ -179,7 +171,7 @@
     height: 14px;
     border: 1px solid #70908B;
     border-radius: 50%;
-    margin-left: -21px;
+    margin-left: -7px;
 
     &::before {
       content: "";
@@ -201,6 +193,15 @@
     &:active {
       border: 1px solid #FFEDCD;
     }
+}
+
+.form-application__animalbox {
+  appearance: none;
+  position: absolute;
+
+  &:checked + .form-application__animal-checkbox::before {
+    display: block;
+  }
 }
 
 .form-application__button-buy {

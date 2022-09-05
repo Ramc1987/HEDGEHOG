@@ -2,6 +2,10 @@
   background: #70908b;
 }
 
+.footer .__container {
+  width: 92.5%;
+}
+
 .footer__content {
   padding: 35px 0;
   display: grid;
@@ -11,6 +15,10 @@
 .footer__link-logo {
   display: inline-block;
   margin: 0 0 62px 0;
+
+  @media (min-width: $tablet) {
+    grid-row: 1/2;
+  }
 }
 
 .footer__logo-image {
@@ -22,13 +30,25 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet) {
+    grid-row: 1/2;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
 }
 
 .footer__nav-item {
   cursor: pointer;
+  margin: 0 0 30px 0;
 
-  &:not(:last-child) {
-    margin: 0 0 30px 0;
+  @media (min-width: $tablet) {
+      &:not(:last-child) {
+        margin: 0 20px 0 0;
+      }
+      padding: 20px 0 0 0;
   }
 
   @include font-title(16px, 118%, 700);
@@ -59,19 +79,37 @@
   grid-row: 1/3;
   grid-column: 2/3;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    grid-row: 2/3;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+  }
 }
 
 .footer__rights-reserved {
+  grid-column: 1/3;
+  margin: 0;
   color: #ffffff;
 
   @include font-title(11px, 131%, 400);
 
   font-family: "Raleway", "Arial", sans-serif;
+
+  @media (min-width: $tablet) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
 }
 
 .footer__rights-reserved span {
   display: inline-block;
   margin: 0 0 36px 0;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .footer__link-phone {
@@ -87,5 +125,14 @@
 
   &:hover {
     color: $color-second;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    grid-row: 3/4;
+    grid-column: 2/3;
   }
 }

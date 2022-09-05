@@ -3,6 +3,10 @@
   width: 191px;
   margin: 0;
 
+  @media (min-width: $mobile-rotate) {
+    margin-inline: auto;
+  }
+
   @media (min-width: 767px) {
     transition: 0.6s;
     transform: scale(0);

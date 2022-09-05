@@ -86,6 +86,11 @@
 
 .header__logo-image {
   display: block;
+
+  @media (min-width: $mobile-rotate) {
+    width: 100px;
+    height: 46px;
+  }
 }
 
 .header__user-list {

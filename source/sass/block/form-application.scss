@@ -171,10 +171,10 @@
     height: 14px;
     border: 1px solid #70908B;
     border-radius: 50%;
-    margin-left: -7px;
 
     &::before {
       content: "";
+      display: block;
       width: 8px;
       height: 8px;
       background: #70908b;
@@ -191,7 +191,7 @@
     }
 
     &:active {
-      border: 1px solid #FFEDCD;
+      border: 1px solid #547153;
     }
 }
 
@@ -208,6 +208,11 @@
   max-width: 300px;
   padding: 26px 87px;
   margin: 0 auto 39px;
+
+  &:disabled {
+    background: rgb(0, 0, 0, 0.3);
+    box-shadow: 0 5px 11px rgb(0, 0, 0, 0.5);
+  }
 }
 
 .form-application__data-client {

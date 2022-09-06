@@ -1,5 +1,11 @@
 .advantages {
   display: grid;
+
+  @media (min-width: $tablet) {
+      transition: .4s;
+      display: flex;
+      justify-content: center;
+  }
 }
 
 .advantages__item {
@@ -7,6 +13,10 @@
 
   &:not(:last-child) {
     margin-bottom: 22px;
+
+    @media (min-width: $tablet) {
+        margin: 0 70px 22px 0;
+      }
   }
 
   &--syringe {
@@ -16,11 +26,28 @@
   &--heart {
     margin-left: auto;
     grid-row: 2/3;
+
+    @media (min-width: $tablet) {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    text-align: center;
+
+    &:nth-child(1) {
+      align-self: flex-end;
+    }
+
+    &:nth-child(3) {
+      align-self: flex-end;
+      margin-bottom: 22px;
+    }
   }
 }
 
 .advantages__item-image {
-  margin-bottom: 18px;
+  margin: 0 auto 18px;
   position: relative;
   width: 92px;
   height: 92px;

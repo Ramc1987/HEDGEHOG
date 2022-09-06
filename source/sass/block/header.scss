@@ -25,6 +25,10 @@
   padding: 0;
   background: transparent;
   z-index: 20;
+
+  @media (min-width: $tablet) {
+    margin: 0 215px 0 0;
+  }
 }
 
 .header__toggle-menu span {

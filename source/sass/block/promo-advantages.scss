@@ -1,15 +1,19 @@
 .promo-advantages {
-  background: url("../img/content-img/image-promo.png") no-repeat,
+  background: url("../img/content-img/image-promo.png") no-repeat right -23px,
   radial-gradient(50% 50% at 50% 50%, rgba(255, 238, 206, 0.49) 0%, rgba(196, 196, 196, 0) 100%);
-  background-position: right -23px;
+
+  @media (min-width: $tablet) {
+    background: url("../img/content-img/image-promo-left.png") no-repeat left 30%, url("../img/content-img/image-promo.png") no-repeat right -23px;
+    background-size: 250px auto;
+  }
 }
 
 .promo-advantages__advantages-list {
   margin: -90px auto 0;
   padding: 20px 0 0 0;
   width: 87.5%;
+  max-width: 480px;
   list-style-type: none;
-
 }
 
 

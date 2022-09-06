@@ -145,6 +145,10 @@
   margin: 50px auto;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto 50px;
+  }
 }
 
 .slider__slide {

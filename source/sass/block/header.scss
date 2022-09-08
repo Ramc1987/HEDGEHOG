@@ -6,16 +6,22 @@
   width: 87.5%;
   padding: 20px 0 0 0;
   margin: 0 auto 27px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 177px;
+    max-width: 1800px;
+  }
 }
 
 .header-nav__inner {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header__toggle-menu {
+  position: relative;
   margin: 0 86px 0 0;
   width: 25px;
   height: 14px;
@@ -28,6 +34,10 @@
 
   @media (min-width: $tablet) {
     margin: 0 215px 0 0;
+  }
+
+  @media (min-width: 860px) {
+    display: none;
   }
 }
 
@@ -86,6 +96,15 @@
 .header__logo {
   z-index: 100;
   margin-right: 35px;
+
+  @media (min-width: 860px) {
+    margin-right: 155px;
+    width: 14%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .header__logo-image {
@@ -99,4 +118,5 @@
 
 .header__user-list {
   margin: 0;
+  order: 3;
 }

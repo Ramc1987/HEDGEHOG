@@ -17,6 +17,10 @@
     transition: .8s;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+  }
 }
 
 .stock__icon {

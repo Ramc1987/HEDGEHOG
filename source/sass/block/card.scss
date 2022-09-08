@@ -16,6 +16,11 @@
   color: #455f5b;
   text-transform: uppercase;
   margin: 0 0 12px 0;
+
+  @media (min-width: $desktop-width) {
+    @include font-title(70px, 69%, 700);
+    margin: 0 0 19px 0;
+  }
 }
 
 .card__sub-title {
@@ -25,6 +30,10 @@
   color: #70908b;
   text-transform: uppercase;
   margin: 0 0 7px 0;
+
+  @media (min-width: $desktop-width) {
+    @include font-title(45px, 120%, 400);
+  }
 }
 
 .card__description {
@@ -39,10 +48,7 @@
   max-width: 300px;
   border: none;
   padding: 22px 91px;
-
-  @media (min-width: $mobile-rotate) {
-
-  }
+  margin-bottom: 115px
 }
 
 .card__button-text {

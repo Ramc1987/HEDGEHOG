@@ -12,10 +12,10 @@
       <header class="header">
         <nav class="header-nav">
           <div class="header-nav__inner">
-            <button class="header__toggle-menu" type="button">
-          <span></span>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+            <button class="header__toggle-menu" type="button" aria-label="Открыть меню">
+              <span></span>
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
             <a class="header__logo" href="index.html">
               <picture>
                 <source media="(min-width: 480px)" srcset="../img/logo/header-logo-big.svg">
@@ -39,25 +39,23 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="header__main-nav main-nav main-nav--open">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">каталог</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">о нас</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">контакты</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">галерея</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link--tel-menu" href="tel:+79655698998">+7 (965) 569-89-98</a>
-              </li>
-            </ul>
+            <div class="header__main-nav main-nav main-nav--open">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">каталог</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">о нас</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">контакты</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">галерея</a>
+                </li>
+              </ul>
+              <a class="main-nav__link-phone main-nav__link-phone--tel-menu" href="tel:+79655698998">+7 (965) 569-89-98</a>
+            </div>
           </div>
         </nav>
       </header>
@@ -71,6 +69,7 @@
           </button>
         </div>
       </section>
+      <div class="top-wrapper__bottom-block"></div>
     </div>
     <main class="main">
       <section class="promo-advantages">
@@ -136,7 +135,7 @@
                     <use xlink:href="img/sprite.svg#pluse"></use>
                   </svg>
                 </button>
-                <img class="slider__slide-image" src="./img/content-img/preview-one.png" width="177" height="129" alt="">
+                <div class="slider__slide-block-image"></div>
               </div>
             </li>
             <li class="slider__slide">
@@ -168,7 +167,7 @@
                     <use xlink:href="img/sprite.svg#pluse"></use>
                   </svg>
                 </button>
-                <img class="slider__slide-image" src="./img/content-img/preview-one.png" width="177" height="129" alt="">
+                <div class="slider__slide-block-image"></div>
               </div>
             </li>
             <li class="slider__slide">
@@ -200,7 +199,7 @@
                     <use xlink:href="img/sprite.svg#pluse"></use>
                   </svg>
                 </button>
-                <img class="slider__slide-image" src="./img/content-img/preview-one.png" width="177" height="129" alt="">
+                <div class="slider__slide-block-image"></div>
               </div>
             </li>
             <li class="slider__slide">
@@ -232,7 +231,7 @@
                     <use xlink:href="img/sprite.svg#pluse"></use>
                   </svg>
                 </button>
-                <img class="slider__slide-image" src="./img/content-img/preview-one.png" width="177" height="129" alt="">
+                <div class="slider__slide-block-image"></div>
               </div>
             </li>
           </ul>
@@ -242,7 +241,8 @@
       </section>
       <section class="form-application">
         <div class="form-application__wrapper">
-          <h2 class="form-application__title">Заполните заявку и мы забронируем для Вас нового друга</h2>
+          <div class="form-aplication__inner">
+            <h2 class="form-application__title">Заполните заявку и мы забронируем для Вас нового друга</h2>
           <form class="form-application__data" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form-application__wrapper-field">
               <ul class="form-application__check-list">
@@ -310,12 +310,13 @@
                   <input class="data-client__input-field" name="email" type="email" required placeholder="Ваш e-mail">
                 </li>
                 <li class="data-client__input-item">
-                  <input class="data-client__input-field" name="comment" type="text" placeholder="Комментарий к заявке">
+                  <input class="data-client__input-field data-client__input-field--textarea" name="comment" placeholder="Комментарий к заявке">
                 </li>
               </ul>
             </fieldset>
             <button class="button form-application__button-buy" type="submit" disabled>Купить ёжика</button>
           </form>
+          </div>
         </div>
       </section>
       <section class="stock">

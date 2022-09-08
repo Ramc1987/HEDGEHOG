@@ -19,7 +19,7 @@
   width: 100%;
 
   &:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $tablet) {
@@ -34,11 +34,15 @@
   border: none;
   background: #F8F8F8;
   border-radius: 8px;
-  padding: 23px 0 23px 21px;
+  padding: 23px 21px 23px 21px;
   box-sizing: border-box;
 
   &::placeholder {
     @include font-title(14px, 114%, 400);
     font-family: "Raleway" Arial, Helvetica, sans-serif;
+  }
+
+  &--textarea {
+    height: 108px;
   }
 }

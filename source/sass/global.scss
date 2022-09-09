@@ -22,21 +22,43 @@ h1, h2, h3, h4, h5, h6 {
 .top-wrapper {
   background: #eaeeef;
   position: relative;
-  // overflow-y: hidden;
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/fone/subtract.jpg")no-repeat;
+    background-size: contain;
+    overflow: hidden;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1048px;
+      height: 1048px;
+      top: -50%;
+      left: -50%;
+      background: radial-gradient(50% 50% at 50% 50%, rgba(180, 197, 194, 0.83) 0%, rgba(224, 225, 225, 0) 100%);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1582px;
+      height: 1582px;
+      top: -73%;
+      left: 590px;
+      background: radial-gradient(50% 50% at 50% 50%, rgba(255, 238, 206, 0.49) 0%, rgba(196, 196, 196, 0) 100%);
+    }
+  }
 }
 
-.top-wrapper__bottom-block {
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
-  height: 186px;
-  width: 100%;
-  background: #ffffff;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  margin-bottom: -30px;
-  
-}
+// .top-wrapper__bottom-block {
+//   @media (min-width: $desktop-width) {
+//     background: url("../img/fone/Ellipse-17.png");
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     height: 119px;
+//   }
+// }
 
 
 .__container {

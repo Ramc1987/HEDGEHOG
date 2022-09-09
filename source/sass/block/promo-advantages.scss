@@ -1,5 +1,4 @@
 .promo-advantages {
-  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 238, 206, 0.49) 0%, rgba(196, 196, 196, 0) 100%);
   position: relative;
 
   &::before {
@@ -7,14 +6,14 @@
     position: absolute;
     width: 207px;
     height: 168px;
-    top: -18px;
+    top: -100px;
     right: 0;
     background: url("../img/content-img/image-promo.png") no-repeat;
   }
 }
 
 .promo-advantages__advantages-list {
-  margin: -218px auto 0;
+  margin: 0 auto 0;
   padding: 20px 0 0 0;
   width: 87.5%;
   max-width: 480px;

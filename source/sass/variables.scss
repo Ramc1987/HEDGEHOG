@@ -6,6 +6,7 @@ $mobile-width: 320px;
 $mobile-rotate: 480px;
 $tablet: 768px;
 $desktop-width: 1150px;
+$desktop-1920: 1920px;
 
 @mixin font-title($fs: 14px, $lh: 24px, $fw: 700) {
   font-family: "CormorantInfant-Bold", "Arial", sans-serif;

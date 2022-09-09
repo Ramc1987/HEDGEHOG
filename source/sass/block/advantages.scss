@@ -1,7 +1,15 @@
 .advantages {
   display: grid;
+  margin-top: -81px;
+  transition-delay: .3s;
+
+  @media (min-width: $mobile-rotate) {
+    transition: .4s ease-in-out;
+    margin-top: 18px;
+  }
 
   @media (min-width: $tablet) {
+    margin-top: 0;
       transition: .4s;
       display: flex;
       justify-content: center;

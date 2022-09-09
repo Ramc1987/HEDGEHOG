@@ -1,11 +1,16 @@
 .card {
-  width: 87.5%;
-  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 115px;
 
   @media (min-width: $mobile-rotate) {
     width: 67%;
     max-width: 630px;
+    margin: 0 auto;
     text-align: center;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 40px;
   }
 }
 
@@ -48,7 +53,11 @@
   max-width: 300px;
   border: none;
   padding: 22px 91px;
-  margin-bottom: 115px
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 115px;
+  }
+
 }
 
 .card__button-text {

@@ -20,8 +20,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .top-wrapper {
-  background: #eaeeef;
   position: relative;
+  background: url("../img/fone/Subtract.png")no-repeat;
+  background-size: contain;
+
+  @media (min-width: 600px) {
+    background: linear-gradient(90deg, rgba(234, 238, 239, 1) 50%, rgba(255, 255, 255, 1) 50%);
+  }
 
   @media (min-width: $desktop-width) {
     background: url("../img/fone/subtract.jpg")no-repeat;
@@ -49,17 +54,11 @@ h1, h2, h3, h4, h5, h6 {
       background: radial-gradient(50% 50% at 50% 50%, rgba(255, 238, 206, 0.49) 0%, rgba(196, 196, 196, 0) 100%);
     }
   }
+
+  @media (min-width: $desktop-1920) {
+    background-size: cover;
+  }
 }
-
-// .top-wrapper__bottom-block {
-//   @media (min-width: $desktop-width) {
-//     background: url("../img/fone/Ellipse-17.png");
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     height: 119px;
-//   }
-// }
-
 
 .__container {
   width: 87.5%;

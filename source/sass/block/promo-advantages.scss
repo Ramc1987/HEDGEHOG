@@ -1,14 +1,31 @@
 .promo-advantages {
   position: relative;
+  background: transparent;
 
   &::before {
     content: "";
     position: absolute;
     width: 207px;
     height: 168px;
-    top: -100px;
+    top: -18px;
     right: 0;
     background: url("../img/content-img/image-promo.png") no-repeat;
+
+    @media (min-width: $tablet) {
+      top: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -110px;
+    }
+
+    @media (min-width: $desktop-1920) {
+      top: 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background: transparent;
   }
 }
 

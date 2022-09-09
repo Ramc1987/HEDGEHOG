@@ -1,1 +1,0 @@
-new Swiper(".mySwiper",{slidesPerView:"auto",centeredSlides:!0,spaceBetween:30,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},slidesPerView:1.5,breakpoints:{320:{slidesPerView:1.5},680:{slidesPerView:2}}});

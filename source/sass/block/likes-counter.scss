@@ -7,10 +7,19 @@
 
 .likes-counter__icon {
   margin-right: 2px;
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff
+  }
+
 }
 
 .slider__likes-number {
   @include font-title(10px, 160%, 400);
   color: $color-first;
   text-transform: lowercase;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }

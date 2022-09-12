@@ -199,17 +199,19 @@
 
 .form-application__animal-check {
   padding: 0 0 0 21px;
+  display: flex;
   cursor: pointer;
 }
 
 .form-application__animal-checkbox {
   position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 14px;
-    height: 14px;
-    border: 1px solid #70908B;
-    border-radius: 50%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 14px;
+  height: 14px;
+  border: 1px solid #70908B;
+  border-radius: 50%;
+  margin-left: -21px;
 
     &::before {
       content: "";

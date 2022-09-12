@@ -16,7 +16,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: -110px;
+      top: 68px;
     }
 
     @media (min-width: $desktop-1920) {
@@ -25,6 +25,22 @@
   }
 
   @media (min-width: $desktop-width) {
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 410px;
+      height: 500px;
+      top: -37px;
+      left: -19px;
+      background: url("../../img/content-img/image-promo-left.png") no-repeat;
+      background-size: 60%;
+      transform: rotate(357deg);
+
+      @media (min-width: 1920px) {
+        top: -85px;
+      }
+    }
     background: transparent;
   }
 }

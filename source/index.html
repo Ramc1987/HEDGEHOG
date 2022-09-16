@@ -277,7 +277,6 @@
                       <span class="form-application__animal-checkbox"></span>
                       <span class="form-application__title-checkbox">Мне нужен 1-2 ёжика</span>
                     </label>
-
                   </li>
                   <li class="form-application__animal-item">
                     <label class="form-application__animal-check">
@@ -306,16 +305,16 @@
             <fieldset class="form-application__data-client data-client">
               <ul class="data-client__list-input">
                 <li class="data-client__input-item">
-                  <input class="data-client__input-field" name="name" type="text" required placeholder="Ваше имя">
+                  <input class="data-client__input-field" name="name" type="text" data-rule="name" placeholder="Ваше имя" autocomplete="off">
                 </li>
                 <li class="data-client__input-item">
-                  <input class="data-client__input-field" name="phone" type="tel" required placeholder="Ваш телефон">
+                  <input class="data-client__input-field" name="phone" type="tel" data-rule="number" placeholder="Ваш телефон" autocomplete="new-password">
                 </li>
                 <li class="data-client__input-item">
-                  <input class="data-client__input-field" name="email" type="email" required placeholder="Ваш e-mail">
+                  <input class="data-client__input-field" name="email" type="email" data-rule="email" placeholder="Ваш e-mail" autocomplete="new-email">
                 </li>
                 <li class="data-client__input-item">
-                  <input class="data-client__input-field data-client__input-field--textarea" name="comment" placeholder="Комментарий к заявке">
+                  <input class="data-client__input-field data-client__input-field--textarea" data-rule="comment" name="comment" placeholder="Комментарий к заявке">
                 </li>
               </ul>
             </fieldset>
@@ -387,6 +386,6 @@
 
     </footer>
     <script src="./js/toggle-menu.js"></script>
-    <script src="./js/button-disabled.js"></script>
+    <script src="./js/validation.js"></script>
   </body>
 </html>

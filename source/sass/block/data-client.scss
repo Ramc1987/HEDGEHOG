@@ -34,8 +34,9 @@
   border: none;
   background: #F8F8F8;
   border-radius: 8px;
-  padding: 23px 21px 23px 21px;
+  padding: 22px 21px 22px 21px;
   box-sizing: border-box;
+  outline: none;
 
   &::placeholder {
     @include font-title(14px, 114%, 400);
@@ -46,3 +47,13 @@
     height: 108px;
   }
 }
+
+.valid {
+  outline: 1px solid green;
+}
+
+.invalid {
+  outline: 1px solid red;
+}
+
+

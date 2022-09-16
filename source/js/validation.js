@@ -4,7 +4,7 @@ const btnSubmit = document.querySelector('.form-application__button-buy');
 
 
 for(let input of inputs) {
-  input.addEventListener('blur', function() {
+  input.addEventListener('input', function() {
 
   let rule = this.dataset.rule;
   let value = this.value;
@@ -20,9 +20,9 @@ for(let input of inputs) {
       case 'email':
         check = /^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i.test(value);
       break;
-      // case 'coment':
-      //   check = /^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$/u.test(value);
-      // break;
+      case 'comment':
+        check = true;
+      break;
     }
 
     this.classList.remove('invalid');
@@ -31,7 +31,7 @@ for(let input of inputs) {
     if(check) {
       this.classList.add('valid');
     }else {
-      this.classList.remove('invalid');
+      this.classList.add('invalid');
     }
   });
 };
@@ -41,14 +41,13 @@ for(let input of inputs) {
 form.addEventListener('submit', function(evt) {
   evt.preventDefault();
 
-  let value = this.value;
-  let check;
-
-  if(check.valueOf) {
+  inputs.forEach((item) => {
+    if(!item.value) {
+      btnSubmit.disabled = true;
     alert('заполните все поля');
-
-    return;
-  }
-
-  this.submit();
-})
+    }else if(item.value) {
+      btnSubmit.disabled = false;
+      this.submit();
+    };
+  });
+});

@@ -19,7 +19,7 @@
 }
 
 .modal-form__window {
-  width: 300px;
+  width: 400px;
   position: relative;
   margin: auto;
   background-color: #ffffff;
@@ -32,4 +32,22 @@
   width: 300px;
   margin: auto;
   text-align: center;
+  padding: 30px 20px;
+}
+
+
+.modal-form__content-title {
+  @include font-title(36px, 115%, 700);
+  margin-bottom: 20px;
+}
+
+.modal-form__content-description {
+  margin: 0 auto 50px;
+  width: 250px;
+  @include font-title(18px, 115%, 700)
+}
+
+.modal-form__button-close {
+  display: block;
+  padding: 25px 0;
 }

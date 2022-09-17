@@ -109,10 +109,10 @@
           <ul class="slider__slide-list">
             <li class="slider__slide">
               <div class="slider__slide-inner item1">
+                <button class="slider__slide-info-btn" type="button">
+                  <span>i</span>
+                </button>
                 <div class="slider__slide-content">
-                  <button class="slider__slide-info-btn" type="button">
-                    <span>i</span>
-                  </button>
                   <ul class="slider__slide-navbar">
                     <li class="slider__navbar-item">
                       <svg class="slider__navbar-icon" width="10" height="10">
@@ -144,6 +144,9 @@
             </li>
             <li class="slider__slide">
               <div class="slider__slide-inner item2">
+                <button class="slider__slide-info-btn" type="button">
+                  <span>i</span>
+                </button>
                 <div class="slider__slide-content">
                   <ul class="slider__slide-navbar">
                     <li class="slider__navbar-item">
@@ -176,6 +179,9 @@
             </li>
             <li class="slider__slide">
               <div class="slider__slide-inner item1">
+                <button class="slider__slide-info-btn" type="button">
+                  <span>i</span>
+                </button>
                 <div class="slider__slide-content">
                   <ul class="slider__slide-navbar">
                     <li class="slider__navbar-item">
@@ -208,6 +214,9 @@
             </li>
             <li class="slider__slide">
               <div class="slider__slide-inner item2">
+                <button class="slider__slide-info-btn" type="button">
+                  <span>i</span>
+                </button>
                 <div class="slider__slide-content">
                   <ul class="slider__slide-navbar">
                     <li class="slider__navbar-item">
@@ -305,13 +314,13 @@
             <fieldset class="form-application__data-client data-client">
               <ul class="data-client__list-input">
                 <li class="data-client__input-item">
-                  <input class="data-client__input-field" name="name" type="text" data-rule="name" placeholder="Ваше имя" autocomplete="off">
+                  <input class="data-client__input-field" name="name" type="text" data-rule="name" placeholder="Ваше имя">
                 </li>
                 <li class="data-client__input-item">
-                  <input class="data-client__input-field" name="phone" type="tel" data-rule="number" placeholder="Ваш телефон" autocomplete="new-password">
+                  <input class="data-client__input-field" name="phone" type="tel" data-rule="number" placeholder="Ваш телефон">
                 </li>
                 <li class="data-client__input-item">
-                  <input class="data-client__input-field" name="email" type="email" data-rule="email" placeholder="Ваш e-mail" autocomplete="new-email">
+                  <input class="data-client__input-field" name="email" type="email" data-rule="email" placeholder="Ваш e-mail">
                 </li>
                 <li class="data-client__input-item">
                   <input class="data-client__input-field data-client__input-field--textarea" data-rule="comment" name="comment" placeholder="Комментарий к заявке">
@@ -388,11 +397,15 @@
     <div class="modal-form modal-form--close">
       <div class="modal-form__window">
         <div class="modal-form__content">
-          <h2>Ваша заявка успешно отправленаю Наш оператор свяжется с вами.</h2>
+          <h2 class="modal-form__content-title">Спасибо за заявку.</h2>
+          <p class="modal-form__content-description">Наш оператор в ближйшее время свяжется с вами.</p>
+          <button class="button modal-form__button-close" type="button">Закрыть</button>
         </div>
       </div>
     </div>
     <script src="./js/toggle-menu.js"></script>
     <script src="./js/validation.js"></script>
+    <script src="./js/modal-form.js"></script>
+    <script src="./js/toggle-info.js"></script>
   </body>
 </html>

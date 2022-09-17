@@ -36,9 +36,10 @@
       background: url("../../img/content-img/image-promo-left.png") no-repeat;
       background-size: 60%;
       transform: rotate(357deg);
+      transition: .4s ease-in-out;
 
       @media (min-width: 1920px) {
-        top: -85px;
+        top: -12px;
       }
     }
     background: transparent;

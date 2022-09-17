@@ -1,6 +1,13 @@
 const form = document.querySelector('.form-application__data');
 const inputs = document.querySelectorAll('input[data-rule]');
 const btnSubmit = document.querySelector('.form-application__button-buy');
+const modal = document.querySelector('.modal-form');
+const modalWindow = document.querySelectorAll('.modal-form__window');
+const modalClose = document.querySelector('.modal-form__button-close');
+
+form.addEventListener('submit', function(evt) {
+  evt.preventDefault();
+});
 
 
 for(let input of inputs) {
@@ -36,18 +43,24 @@ for(let input of inputs) {
   });
 };
 
-
-
-form.addEventListener('submit', function(evt) {
-  evt.preventDefault();
-
+btnSubmit.addEventListener('click', function(evt) {
   inputs.forEach((item) => {
     if(!item.value) {
       btnSubmit.disabled = true;
-    alert('заполните все поля');
+      alert('заполните все поля');
     }else if(item.value) {
       btnSubmit.disabled = false;
-      this.submit();
+      modal.classList.remove('modal-form--close');
     };
   });
+})
+
+const clearForm = function() {
+  form.reset();
+}
+
+modalClose.addEventListener('click', function() {
+  modal.classList.add('modal-form--close');
+  clearForm();
 });
+

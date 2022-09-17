@@ -10,7 +10,7 @@
   &:not(:last-child) {
     margin-right: 13px;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop-width) {
       width: 160px;
     }
   }
@@ -39,7 +39,7 @@
 .user-list__item-phone {
   display: none;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop-width) {
     display: inline-block;
     width: 128px;
     padding: 10px 0 10px 45px;

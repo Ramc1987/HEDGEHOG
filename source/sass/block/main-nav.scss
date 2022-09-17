@@ -47,7 +47,12 @@
 
   @media (min-width: $desktop-width) {
     max-width: 565px;
-    justify-content: end;
+    justify-content: start;
+  }
+
+  @media (min-width: 1920px) {
+    max-width: 565px;
+    justify-content: start;
   }
 }
 
@@ -64,6 +69,10 @@
     &:not(:last-child) {
       margin: 0 43px 0 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90px;
   }
 }
 

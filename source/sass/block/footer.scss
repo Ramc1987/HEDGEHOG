@@ -33,6 +33,10 @@
     margin: 0 0 24px 0;
     width: 200px;
   }
+
+  @media (min-width: 1920px) {
+    margin: 0 84px 24px 0;
+  }
 }
 
 .footer__logo-image {
@@ -150,6 +154,9 @@
 
   @media (min-width: $tablet) {
     margin: 0;
+  }
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 

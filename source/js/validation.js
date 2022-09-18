@@ -1,9 +1,19 @@
+const formSection = document.querySelector('.form-application');
 const form = document.querySelector('.form-application__data');
 const inputs = document.querySelectorAll('input[data-rule]');
 const btnSubmit = document.querySelector('.form-application__button-buy');
 const modal = document.querySelector('.modal-form');
 const modalWindow = document.querySelectorAll('.modal-form__window');
 const modalClose = document.querySelector('.modal-form__button-close');
+const buttonBuy = document.querySelector('.card__button-buy');
+
+function handleButtonclick() {
+  formSection.scrollIntoView({
+    block: 'start', inline: "nearest", behavior: "smooth"
+  });
+};
+
+buttonBuy.addEventListener('click', handleButtonclick);
 
 form.addEventListener('submit', function(evt) {
   evt.preventDefault();

@@ -54,15 +54,13 @@
   border: none;
   padding: 22px 91px;
 
+  @include font-title(14px, 114%, 700);
+  
+  font-family: "Raleway", "Arial", sans-serif;
+  color: #ffffff;
+
   @media (min-width: $desktop-width) {
     margin-bottom: 115px;
   }
 
-}
-
-.card__button-text {
-  @include font-title(14px, 114%, 700);
-
-  font-family: "Raleway", "Arial", sans-serif;
-  color: #ffffff;
 }

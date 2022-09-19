@@ -21,6 +21,10 @@
   @media (min-width: $tablet) {
     flex-wrap: wrap;
   }
+
+  @media (min-width: 1800px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .header__toggle-menu {
@@ -108,6 +112,10 @@
   @media (min-width: $desktop-width) {
     margin-right: 0;
     width: auto;
+  }
+
+  @media (min-width: 1920px) {
+    margin-right: 573px;
   }
 }
 

@@ -12,6 +12,10 @@
   @media (min-width: $tablet) {
     margin-bottom: 40px;
   }
+
+  @media (min-width: 1920px) {
+    max-width: 650px;
+  }
 }
 
 .card__title {
@@ -26,6 +30,12 @@
     @include font-title(70px, 69%, 700);
     margin: 0 0 19px 0;
   }
+
+  @media (min-width: 1920px) {
+    @include font-title(88px, 69%, 700);
+    margin: 0 0 19px 0;
+    transition: .3s ease-in-out;
+  }
 }
 
 .card__sub-title {
@@ -39,6 +49,12 @@
   @media (min-width: $desktop-width) {
     @include font-title(45px, 120%, 400);
   }
+
+  @media (min-width: 1920px) {
+    @include font-title(36px, 69%, 700);
+    margin: 0 0 19px 0;
+    transition: .3s ease-in-out;
+  }
 }
 
 .card__description {
@@ -47,6 +63,14 @@
   font-family: "Raleway", "Arial", sans-serif;
   color: #70908b;
   margin: 0 0 21px 0;
+
+  @media (min-width: 1920px) {
+    @include font-title(14px, 141%, 400);
+
+    font-family: "Raleway", "Arial", sans-serif;
+    margin: 0 0 19px 0;
+    transition: .3s ease-in-out;
+  }
 }
 
 .card__button-buy {
@@ -55,7 +79,7 @@
   padding: 22px 91px;
 
   @include font-title(14px, 114%, 700);
-  
+
   font-family: "Raleway", "Arial", sans-serif;
   color: #ffffff;
 

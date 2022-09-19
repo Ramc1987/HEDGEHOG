@@ -1,1 +1,1 @@
-const toggleBtn=document.querySelectorAll(".slider__slide-info-btn"),navbarCard=document.querySelector(".slider__slide-navbar");function infoBtn(){toggleBtn.forEach((e=>{e.addEventListener("click",(function(){navbarCard.style.transform="scale(1)"}))}))}
+const toggleBtn=document.querySelectorAll(".slider__slide-info-btn"),navbarCard=document.querySelector(".slider__slide-navbar");toggleBtn.forEach((e=>{e.addEventListener("click",(function(){navbarCard.style="transform: scale(1)"}))}));

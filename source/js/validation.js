@@ -56,8 +56,8 @@ for(let input of inputs) {
 btnSubmit.addEventListener('click', function(evt) {
   inputs.forEach((item) => {
     if(!item.value) {
-      btnSubmit.disabled = true;
       alert('заполните все поля');
+      btnSubmit.disabled = true;
     }else if(item.value) {
       btnSubmit.disabled = false;
       modal.classList.remove('modal-form--close');

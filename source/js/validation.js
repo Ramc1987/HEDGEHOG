@@ -7,6 +7,8 @@ const modalWindow = document.querySelectorAll('.modal-form__window');
 const modalClose = document.querySelector('.modal-form__button-close');
 const buttonBuy = document.querySelector('.card__button-buy');
 
+btnSubmit.disabled = true;
+
 function handleButtonclick() {
   formSection.scrollIntoView({
     block: 'start', inline: "nearest", behavior: "smooth"
@@ -42,27 +44,35 @@ for(let input of inputs) {
       break;
     }
 
+
     this.classList.remove('invalid');
     this.classList.remove('valid');
 
     if(check) {
       this.classList.add('valid');
+      btnSubmit.disabled = false;
     }else {
       this.classList.add('invalid');
+      btnSubmit.disabled = true;
+    }
+
+    if(!checkInputs()){
+      btnSubmit.disabled = true;
     }
   });
 };
 
+function checkInputs() {
+  for(let i = 0; i < inputs.length; i++) {
+    if(!inputs[i].value) {
+      return false;
+    }
+  }
+  return true
+}
+
 btnSubmit.addEventListener('click', function(evt) {
-  inputs.forEach((item) => {
-    if(!item.value) {
-      alert('заполните все поля');
-      btnSubmit.disabled = true;
-    }else if(item.value) {
-      btnSubmit.disabled = false;
-      modal.classList.remove('modal-form--close');
-    };
-  });
+  modal.classList.remove('modal-form--close');
 })
 
 const clearForm = function() {

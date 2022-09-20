@@ -114,8 +114,6 @@
   justify-content: end;
 
   @media (min-width: $desktop-width) {
-    display: none;
-    transform: scale(0);
     position: absolute;
     top: 60px;
     right: -250px;
@@ -132,6 +130,14 @@
       right: 98px;
       border: 10px solid transparent;
       border-bottom: 10px solid #195557;
+    }
+
+    &--close{
+      transform: scale(0);
+    }
+
+    &--open {
+      transform: scale(1);
     }
   }
 }

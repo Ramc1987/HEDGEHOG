@@ -3,7 +3,7 @@ const form = document.querySelector('.form-application__data');
 const inputs = document.querySelectorAll('input[data-rule]');
 const btnSubmit = document.querySelector('.form-application__button-buy');
 const modal = document.querySelector('.modal-form');
-const modalWindow = document.querySelectorAll('.modal-form__window');
+const modalWindow = document.querySelector('.modal-form__window');
 const modalClose = document.querySelector('.modal-form__button-close');
 const buttonBuy = document.querySelector('.card__button-buy');
 
@@ -79,8 +79,16 @@ const clearForm = function() {
   form.reset();
 }
 
+modal.addEventListener('click', function(event) {
+  event.stopPropagation();
+  modal.classList.add('modal-form--close');
+  clearForm();
+})
+
 modalClose.addEventListener('click', function() {
   modal.classList.add('modal-form--close');
   clearForm();
 });
+
+
 

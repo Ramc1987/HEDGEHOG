@@ -9,9 +9,9 @@
   margin-right: 2px;
 
   @media (min-width: $desktop-width) {
-    fill: #ffffff
-  }
-
+    &--heart-info {}
+      stroke: #ffffff;
+    }
 }
 
 .slider__likes-number {

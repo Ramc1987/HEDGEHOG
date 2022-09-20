@@ -39,6 +39,7 @@
   flex: 0 0 279px;
   font-size: 14px;
   scroll-snap-align: start;
+  cursor: grabbing;
 
   @media (min-width: $desktop-width) {
     max-width: 570px;
@@ -149,11 +150,22 @@
   &:not(:last-child) {
     margin-right: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 18px;
+  }
 }
 
 .slider__navbar-icon {
   margin-right: 2px;
-  fill: #C2CCCA
+
+  @media (min-width: $desktop-width) {
+    &--syringe-info {
+      stroke: #ffffff;
+      stroke-width: 1px;
+      margin-bottom: 2px
+    }
+  }
 }
 
 .slider__navbar-text {
@@ -227,10 +239,6 @@
   background: transparent;
   cursor: pointer;
   transition: .3s ease-in-out;
-
-  &:hover {
-    transform: rotate(360deg);
-  }
 }
 
 .slider__button-icon {

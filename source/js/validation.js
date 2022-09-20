@@ -80,9 +80,12 @@ const clearForm = function() {
 }
 
 modal.addEventListener('click', function(event) {
-  event.stopPropagation();
   modal.classList.add('modal-form--close');
   clearForm();
+})
+
+modalWindow.addEventListener('click', function(event) {
+  event.stopPropagation();
 })
 
 modalClose.addEventListener('click', function() {

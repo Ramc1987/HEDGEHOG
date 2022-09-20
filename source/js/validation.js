@@ -60,7 +60,7 @@ for(let input of inputs) {
       btnSubmit.disabled = true;
     }
 
-    if(!checkInputs()){
+    if(!checkInputs() && check===true){
       btnSubmit.disabled = true;
     }
   });

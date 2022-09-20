@@ -7,8 +7,10 @@ const modalWindow = document.querySelector('.modal-form__window');
 const modalClose = document.querySelector('.modal-form__button-close');
 const buttonBuy = document.querySelector('.card__button-buy');
 
+
 btnSubmit.disabled = true;
 
+//скролит по нажатию на кнопку КУПИТЬ к форме покупки
 function handleButtonclick() {
   formSection.scrollIntoView({
     block: 'start', inline: "nearest", behavior: "smooth"
@@ -17,6 +19,8 @@ function handleButtonclick() {
 
 buttonBuy.addEventListener('click', handleButtonclick);
 
+
+//блокирует отправку формы
 form.addEventListener('submit', function(evt) {
   evt.preventDefault();
 });

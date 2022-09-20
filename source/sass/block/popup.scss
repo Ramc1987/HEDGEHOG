@@ -1,7 +1,35 @@
-.popup {}
+.popup__list {
+  list-style-type: none;
+  z-index: 10;
+  padding: 19px 0 21px 24px;
 
-.popup__list {}
+  width: 169px;
+  background: #FFFEFE;
+  box-shadow: 4px 4px 20px #C2CCCA;
+  border-radius: 8px;
 
-.popup__item {}
+  &--close {
+      display: none;
+    }
 
-.popup__link {}
+  &--open {
+    display: block;
+    position: absolute;
+    left: -24px;
+    top: 54px;
+  }
+}
+
+.popup__item {
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
+}
+
+.popup__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-first;
+
+  @include font-title(16px, 1.18, 700);
+}

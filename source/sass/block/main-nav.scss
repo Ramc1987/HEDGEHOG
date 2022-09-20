@@ -48,6 +48,7 @@
   @media (min-width: $desktop-width) {
     max-width: 565px;
     justify-content: start;
+    position: relative;
   }
 
   @media (min-width: 1920px) {

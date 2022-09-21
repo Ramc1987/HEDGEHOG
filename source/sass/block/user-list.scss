@@ -14,6 +14,12 @@
       width: 190px;
     }
   }
+
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
 }
 
 .user-list__item-link {

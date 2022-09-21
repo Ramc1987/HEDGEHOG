@@ -12,7 +12,14 @@
   &--close {
     display: none;
   }
-}
+
+    &--open {
+      position: absolute;
+      left: -24px;
+      top: 54px;
+    }
+  }
+
 
 .popup__item {
   &:not(:last-child) {

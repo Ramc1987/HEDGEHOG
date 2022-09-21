@@ -12,8 +12,3 @@ function openPopup() {
 
 catalogBtn.addEventListener('click', openPopup);
 
-
-
-
-
-

@@ -11,3 +11,5 @@ function openMobMenu() {
 }
 
 toggleMenu.addEventListener('click', openMobMenu)
+
+export{toggleMenu, openMobMenu}

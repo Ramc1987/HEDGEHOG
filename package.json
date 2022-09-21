@@ -1,5 +1,6 @@
 {
   "name": "mishka-25",
+  "type": "module",
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
   "homepage": "https://ramc1987.github.io/1778551-mishka-25/",
@@ -47,9 +48,9 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "^16"
+    "node": "^16.x",
+    "npm": "8.x"
   },
-  "type": "module",
   "dependencies": {
     "gh": "^2.8.9",
     "gh-pages": "^4.0.0",

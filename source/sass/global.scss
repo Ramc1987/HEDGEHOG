@@ -37,10 +37,10 @@ h1, h2, h3, h4, h5, h6 {
     &::after {
       content: "";
       position: absolute;
-      width: 1048px;
-      height: 1048px;
-      top: -50%;
-      left: -50%;
+      width: 401px;
+      height: 500px;
+      top: -126px;
+      left: -177px;
       background: radial-gradient(50% 50% at 50% 50%, rgba(180, 197, 194, 0.83) 0%, rgba(224, 225, 225, 0) 100%);
     }
 

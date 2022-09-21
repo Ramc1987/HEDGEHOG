@@ -11,4 +11,3 @@ toggleBtn.forEach((item, index) => {
     }
   })
 })
-

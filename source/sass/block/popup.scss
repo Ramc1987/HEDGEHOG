@@ -7,16 +7,17 @@
   background: #FFFEFE;
   box-shadow: 4px 4px 20px #C2CCCA;
   border-radius: 8px;
+  transition: .4s ease-in-out;
 
   &--close {
-      display: none;
+    display: none;
     }
 
   &--open {
-    display: block;
     position: absolute;
     left: -24px;
     top: 54px;
+
   }
 }
 

@@ -60,17 +60,15 @@
 }
 
 .main-nav__item-hover {
-  @media (min-width: $tablet) {
-      position: absolute;
-      top: 14px;
-      left: -9px;
-      width: 0;
-      height: 0;
-      border-top: 6px solid transparent;
-      border-left: 6px solid #195557;
-      border-bottom: 6px solid transparent;
-      border-radius: 2px;
-    }
+  position: absolute;
+    top: 14px;
+    left: -9px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 6px solid #195557;
+    border-bottom: 6px solid transparent;
+    border-radius: 2px;
 }
 
 .main-nav__item {

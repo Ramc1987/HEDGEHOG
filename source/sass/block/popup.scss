@@ -16,7 +16,11 @@
     &--open {
       position: absolute;
       left: -24px;
-      top: 54px;
+      top: 40px;
+
+      @media (min-width: $desktop-width) {
+        top: 48px;
+      }
     }
   }
 
@@ -27,7 +31,7 @@
   }
 
   &:hover {
-    background: rgb(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.040);
   }
 }
 

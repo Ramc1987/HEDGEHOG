@@ -1,5 +1,3 @@
-import { openMobMenu } from './toggle-menu';
-
 const formSection = document.querySelector('.form-application');
 const form = document.querySelector('.form-application__data');
 const inputs = document.querySelectorAll('input[data-rule]');
@@ -98,6 +96,3 @@ modalClose.addEventListener('click', function() {
   modal.classList.add('modal-form--close');
   clearForm();
 });
-
-
-toggleMenu.addEventListener('click', openMobMenu)

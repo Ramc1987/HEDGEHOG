@@ -6,6 +6,7 @@
 }
 
 .user-list__item {
+  position: relative;
 
   &:not(:last-child) {
     margin-right: 13px;
@@ -40,6 +41,26 @@
     width: 32px;
     height: 27px;
   }
+}
+
+.user-list__counter-container {
+  width: 19px;
+  height: 19px;
+  border-radius: 50px;
+  background: rgb(255, 237, 205);
+  position: absolute;
+  top: -8px;
+  right: 0;
+}
+
+.user-list__counter-basket {
+  text-transform: uppercase;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #000000;
+  padding: 3px 7px;
+
+  @include font-title(10px, 12px, 700);
+  font-family: "Raleway" Arial, Helvetica, sans-serif;
 }
 
 .user-list__item-phone {

@@ -1,4 +1,5 @@
 .popup__list {
+  cursor: default;
   list-style-type: none;
   z-index: 10;
   padding: 19px 0 21px 24px;
@@ -23,6 +24,10 @@
 .popup__item {
   &:not(:last-child) {
     margin-bottom: 19px;
+  }
+
+  &:hover {
+    background: rgb(0, 0, 0, 0.1);
   }
 }
 

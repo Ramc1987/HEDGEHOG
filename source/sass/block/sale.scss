@@ -1,0 +1,49 @@
+.sale {
+  width: 48px;
+  height: 21px;
+  background: rgb(112, 144, 139);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: -3px;
+  left: 31px;
+  z-index: 10;
+
+  @media (min-width: $tablet) {
+    width: 55px;
+    height: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 59px;
+    height: 34px;
+  }
+
+  @media (min-width: 1920px) {
+    width: 68px;
+    height: 36px;
+  }
+
+  &__text {
+    @include font-title(12px, 14px, 700);
+
+    @media (min-width: $tablet) {
+      @include font-title(14px, 16px, 700);
+    }
+
+    @media (min-width: $desktop-width) {
+      @include font-title(18px, 19px, 700);
+    }
+
+    @media (min-width: 1920px) {
+      @include font-title(20px, 23px, 700);
+    }
+
+
+    color: #ffffff;
+    font-family: "Raleway" Arial, Helvetica, sans-serif;
+  }
+}

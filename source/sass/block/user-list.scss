@@ -52,6 +52,10 @@
   position: absolute;
   top: -8px;
   right: 0;
+
+  &--counter-product {
+    display: block;
+  }
 }
 
 .user-list__counter-basket {

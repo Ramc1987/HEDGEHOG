@@ -1,4 +1,9 @@
+.slider {
+  position: relative;
+}
+
 .slider .__container-slider {
+  position: relative;
   margin: 0 0 0 19px;
 
 
@@ -12,6 +17,7 @@
   @media (min-width: $desktop-width) {
     width: 1200px;
     margin: 0 auto;
+
   }
 }
 
@@ -49,6 +55,7 @@
   font-size: 14px;
   scroll-snap-align: start;
   cursor: grabbing;
+  transition: 0.8s ease-in-out;
 
   @media (min-width: $desktop-width) {
     max-width: 570px;
@@ -279,9 +286,28 @@
 .slider__button-prev,
 .slider__button-next {
 
-  &::after {
-    font-size: 24px;
-    color: #70908B;
-    display: block;
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+  }
+}
+
+.slider__button-prev {
+  @media (min-width: $tablet) {
+    bottom: -40px;
+    left: 40%;
+  }
+}
+
+.slider__button-next {
+  @media (min-width: $tablet) {
+    bottom: -40px;
+    right: 40%;
   }
 }
